@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Utils={};iAd.Utils.copyPropertiesFromSourceToTarget=function(b,c){for(var a in b){c[a]=b[a]}};iAd.Utils.objectIsFunction=function(a){return(typeof a=="function")};iAd.Utils.objectIsString=function(a){return(typeof a=="string"||a instanceof String)};iAd.Utils.objectIsArray=function(a){return(a instanceof Array)};iAd.Utils.objectIsPrimitive=function(a){return(a==null||typeof a=="number"||typeof a=="boolean"||this.objectIsString(a))};iAd.Utils.objectHasMethod=function(b,a){return(b!=null&&b[a]!==undefined&&this.objectIsFunction(b[a]))};iAd.Utils.objectIsInstanceOfClass=function(a,b){return(b!=null)&&(a instanceof b)};iAd.Utils.resolveObjectPathFrom=function(d,h,f){if(!h||h[0]=="."){return undefined}var c=h.split(".");var a,b;for(var e=0,g=c.length;d!=null&&e<g;e++){b=c[e];a=d[b];if(f&&a==null){a=d[b]={}}d=a}return d};iAd.Utils.resolveObjectPath=function(b,a){return iAd.Utils.resolveObjectPathFrom(window,b,a)};iAd.Utils.setupDisplayNames=function(b,a){var a=a||b.displayName||b.name;b.displayName=b.displayName||a;for(var c in b){if(b.__lookupGetter__(c)){continue}var d=b[c];if(iAd.Utils.objectIsFunction(d)){d.displayName=iAd.Utils.createDisplayName(a,c)}}for(var c in b.prototype){if(b.prototype.__lookupGetter__(c)){continue}var d=b.prototype[c];if(iAd.Utils.objectIsFunction(d)){d.displayName=iAd.Utils.createDisplayName(a,c,true)}}};iAd.Utils.createDisplayName=function(c,a,b){return c+(b?".":"#")+a+"()"};iAd.Utils.setupDisplayNames(iAd.Utils,"iAd.Utils");

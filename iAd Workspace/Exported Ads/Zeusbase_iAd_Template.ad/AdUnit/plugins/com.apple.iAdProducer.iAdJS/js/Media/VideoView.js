@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Class({name:"iAd.VideoView",superclass:iAd.View,cssClassName:"ad-video-view",synthesizedProperties:["video"],archivedProperties:["video"]});iAd.VideoView.prototype.willMoveToSuperview=function(a){if(this.superview!=null&&a!=null){this.removeVideoFromView();this.addVideoToViewIfRenderable()}};iAd.VideoView.prototype.layerWasRemovedFromDocument=function(){this.callSuper();this.removeVideoFromView()};iAd.VideoView.prototype.layerWasInsertedIntoDocument=function(){this.callSuper();this.addVideoToViewIfRenderable()};iAd.VideoView.prototype.addVideoToViewIfRenderable=function(){if(this._video&&this._video.renderable){this.addVideoToView()}};iAd.VideoView.prototype.addVideoToView=function(){if(this._video&&!this.layer.contains(this._video.element)){this.layer.appendChild(this._video.element);this._video.elementWasInsertedIntoDocument()}};iAd.VideoView.prototype.removeVideoFromView=function(){if(this._video&&this._video.element.parentNode==this.layer){this.layer.removeChild(this._video.element);this._video.elementWasRemovedFromDocument()}};iAd.VideoView.prototype.setVideo=function(a){this._video=a;this._video.addPropertyObserver("renderable",this,"videoRenderableDidUpdate")};iAd.VideoView.prototype.videoRenderableDidUpdate=function(){if(this._video){this._video.element.style.opacity=this._video.renderable?1:0}};iAd.VideoView.prototype.mediaPlaybackWillStart=function(a){this.addVideoToView();this.videoRenderableDidUpdate()};iAd.VideoView.prototype.mediaPlaybackDidStart=function(a){this.videoRenderableDidUpdate()};iAd.VideoView.prototype.mediaWillUnload=function(a){this._video.element.style.opacity=0};iAd.VideoView.prototype.mediaDidUnload=function(a){this.removeVideoFromView()};

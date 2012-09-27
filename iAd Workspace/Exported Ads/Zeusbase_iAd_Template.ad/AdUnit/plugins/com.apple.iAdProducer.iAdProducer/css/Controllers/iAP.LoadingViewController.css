@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+body.ad-device-landscape .ad-loading-view:not(.ad-landscape){-webkit-transform-origin:0 0;-webkit-transform:rotate(270deg) translateX(-320px)}body.ad-device-portrait .ad-loading-view.ad-landscape{-webkit-transform-origin:0 0;-webkit-transform:rotate(-90deg) translateX(-480px)}body.ad-iPad.ad-device-landscape .ad-loading-view:not(.ad-landscape){-webkit-transform-origin:0 0;-webkit-transform:rotate(270deg) translateX(-768px)}body.ad-iPad.ad-device-portrait .ad-loading-view.ad-landscape{-webkit-transform-origin:0 0;-webkit-transform:rotate(-90deg) translateX(-1024px)}body.iap-iTunesProject.ad-device-portrait .ad-loading-view.ad-landscape{-webkit-transform:none}

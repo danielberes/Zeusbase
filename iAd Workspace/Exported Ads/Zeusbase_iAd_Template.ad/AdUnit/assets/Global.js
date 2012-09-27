@@ -1,0 +1,1 @@
+/* Put globally accessible JavaScript for the ad unit in this file. */

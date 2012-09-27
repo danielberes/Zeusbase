@@ -1,0 +1,174 @@
+<bannerPage internalID="7A0FC4BA-4DEC-43F7-BD68-6D7004E6BDA2">
+<name>Banner</name>
+<pageRole>6</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>1</orientation>
+<pageClassName>iAP.BannerViewController</pageClassName>
+<preloadSettings>YnBsaXN0MDDUAQIDBAUGISJYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKcHCBESGBkaVSRudWxs0wkKCwwOEFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzoQ2AAqEPgAOABl8QJEZDRkNBMjI4LTNCODUtNDg1OC04MEI3LUEzM0IwNDZEMjZGONMJCgsTFRChFIAEoRaABYAGXmRlZmF1bHRTZXR0aW5nCdIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5ox0fIFxOU0RpY3Rpb25hcnlYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRIyRUcm9vdIABAAgAEQAaACMALQAyADcAPwBFAEwAVABfAGYAaABqAGwAbgBwAJcAngCgAKIApACmAKgAtwC4AL0AyADRAOcA6wD4AQEBEwEWARsAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAABHQ==</preloadSettings>
+<properties>
+    <property name="-iap-background-inspector-index">
+        <integer>3</integer>
+    </property>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background">-webkit-gradient(linear, left top, left bottom, color-stop(0%, #66ccff), color-stop(100%, #000000))</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">100% 100%</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>370479444.387</date>
+</lastModifiedDate>
+<components>
+    <component internalID="E76642C2-6CDA-4A75-B8EF-98BB718AE816">
+        <componentClassName>iAd.Label</componentClassName>
+        <outlet>bannerLabel</outlet>
+        <outletNameFromTemplate>label</outletNameFromTemplate>
+        <templateName>Label</templateName>
+        <properties>
+            <property name="-iap-has-set-portrait-frame-origin">
+                <true/>
+            </property>
+            <property name="-iap-has-set-portrait-frame-size">
+                <true/>
+            </property>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-number-of-lines">0</property>
+            <property name="ad-outlet">bannerLabel</property>
+            <property name="ad-text">Zeusbase iAd Template
+</property>
+            <property name="background-position">left top</property>
+            <property name="background-repeat">no-repeat</property>
+            <property name="background-repeat-x">no-repeat</property>
+            <property name="background-repeat-y">no-repeat</property>
+            <property name="background-size">auto</property>
+            <property name="color">#ffffff</property>
+            <property name="font-family">
+                <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+            </property>
+            <property name="font-object">
+                <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+            </property>
+            <property name="font-size">23px</property>
+            <property name="height">
+                <real>30.0</real>
+            </property>
+            <property name="left">
+                <real>159.0</real>
+            </property>
+            <property name="text-align">center</property>
+            <property name="text-shadow">0px 2px 4px rgba(0, 0, 0, 0.5)</property>
+            <property name="top">
+                <real>18.0</real>
+            </property>
+            <property name="width">
+                <real>409.0</real>
+            </property>
+        </properties>
+        <properties state="ad-landscape">
+            <property name="height">
+                <real>30.0</real>
+            </property>
+            <property name="left">
+                <real>280.167</real>
+            </property>
+            <property name="top">
+                <real>18.0</real>
+            </property>
+            <property name="width">
+                <real>409.0</real>
+            </property>
+        </properties>
+    </component>
+    <component internalID="38CFF7A5-5707-4967-9254-2AB528127C53">
+        <componentClassName>iAd.ImageView</componentClassName>
+        <outlet>bannerImage</outlet>
+        <outletNameFromTemplate>image</outletNameFromTemplate>
+        <templateName>Image</templateName>
+        <properties>
+            <property name="-iap-aspect-ratio-locked">false</property>
+            <property name="-iap-has-set-portrait-frame-origin">
+                <true/>
+            </property>
+            <property name="-iap-has-set-portrait-frame-size">
+                <true/>
+            </property>
+            <property name="ad-asset-droppable">true</property>
+            <property name="ad-auto-sized">false</property>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-has-hidpi-version">true</property>
+            <property name="ad-image">
+                <assetreference>FCFCA228-3B85-4858-80B7-A33B046D26F8</assetreference>
+            </property>
+            <property name="ad-image-position">left top</property>
+            <property name="ad-image-repeat">no-repeat</property>
+            <property name="ad-image-size">28px 28px</property>
+            <property name="ad-outlet">bannerImage</property>
+            <property name="ad-small">true</property>
+            <property name="height">
+                <real>33.0</real>
+            </property>
+            <property name="left">
+                <real>21.0</real>
+            </property>
+            <property name="top">
+                <real>18.0</real>
+            </property>
+            <property name="width">
+                <real>29.0</real>
+            </property>
+        </properties>
+        <properties state="ad-landscape">
+            <property name="height">
+                <real>33.0</real>
+            </property>
+            <property name="left">
+                <real>32.833</real>
+            </property>
+            <property name="top">
+                <real>18.0</real>
+            </property>
+            <property name="width">
+                <real>29.0</real>
+            </property>
+        </properties>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="6DFB0A8E-D43A-42F0-9049-9720FAB19B50">
+        <name>Banner Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="bannerDidAppear">
+            <actionSequenceReference>6DFB0A8E-D43A-42F0-9049-9720FAB19B50</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<bannerType>2</bannerType>
+<authored>0</authored>
+<listIndex>0</listIndex>
+</bannerPage>

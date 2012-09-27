@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Class({name:"iAd.MapAnnotation",synthesizedProperties:["identifier","latitude","longitude"]});iAd.MapAnnotation.PIN_COLOR_RED="red";iAd.MapAnnotation.PIN_COLOR_GREEN="green";iAd.MapAnnotation.PIN_COLOR_PURPLE="purple";iAd.MapAnnotation.prototype.init=function(a){this.callSuper();this.coordinate=a.coordinate.copy();this.id=a.id;this.title=(a.title||"").toString();this.subtitle=(a.subtitle||"").toString();this.pinColor=a.pinColor||iAd.MapAnnotation.PIN_COLOR_RED;this.imageURL=a.imageURL?iAd.Path.resolveAbsolutePath(a.imageURL):null;this.xOffset=a.xOffset;this.yOffset=a.yOffset;this.draggable=a.draggable;this.hasLeftCalloutButton=a.hasLeftCalloutButton;this.hasRightCalloutButton=a.hasRightCalloutButton;this.pinAnimatesDrop=a.pinAnimatesDrop};iAd.MapAnnotation.prototype.getIdentifier=function(){return this.id};iAd.MapAnnotation.prototype.setIdentifier=function(a){iAd.Console.warn("iAd.MapAnnotation.identifier is read-only. Please use iAd.MapAnnotation.id instead.")};iAd.MapAnnotation.prototype.getLatitude=function(){return this.coordinate.latitude};iAd.MapAnnotation.prototype.setLatitude=function(){iAd.Console.warn("iAd.MapAnnotation.latitude is read-only. Please use iAd.MapAnnotation.coordinate instead.")};iAd.MapAnnotation.prototype.getLongitude=function(){return this.coordinate.longitude};iAd.MapAnnotation.prototype.setLongitude=function(){iAd.Console.warn("iAd.MapAnnotation.longitude is read-only. Please use iAd.MapAnnotation.coordinate instead.")};

@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+.ad-page-control{font-size:0;-webkit-box-sizing:border-box}.ad-page-control>div{display:inline-block;width:6px;height:6px;-webkit-border-radius:3px;background-color:white;margin:0 5px;opacity:.3}.ad-page-control>div.ad-selected{opacity:1}

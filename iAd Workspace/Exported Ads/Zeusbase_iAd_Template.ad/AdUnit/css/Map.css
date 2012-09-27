@@ -1,0 +1,9 @@
+#Map { height: 768px; width: 1024px; }
+body.ad-LoDPI #Map { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+body.ad-HiDPI #Map { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+#Map-iap-background-layer { height: 100%; left: 0px; top: 0px; width: 100%; }
+#Map-mapLabel { color: rgba(0, 0, 0, 0.7); font-family: HelveticaNeue-Bold; font-size: 28px; height: 38px; left: 352px; text-align: center; top: 20px; width: 320px; }
+#Map-mapView { height: 582px; left: 48px; top: 80px; width: 928px; }
+body.ad-LoDPI #Map-mapView { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Map-mapView { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Map-menuSharedLayer { height: 69px; left: 0px; top: 699px; width: 1024px; }

@@ -1,0 +1,39 @@
+#Photos { height: 768px; width: 1024px; }
+body.ad-LoDPI #Photos { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+body.ad-HiDPI #Photos { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+#Photos-iap-background-layer { height: 100%; left: 0px; top: 0px; width: 100%; }
+#Photos-photosGalleryView { height: 540px; left: 0px; top: 80px; width: 1024px; }
+body.ad-LoDPI #Photos-photosGalleryView { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Photos-photosGalleryView { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Photos-photosLabel { color: rgba(0, 0, 0, 0.7); font-family: HelveticaNeue-Bold; font-size: 28px; height: 38px; left: 352px; text-align: center; top: 20px; width: 320px; }
+#Photos-menuSharedLayer { height: 69px; left: 0px; top: 699px; width: 1024px; }
+#Photos-cell1 { -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0))); -webkit-transform: translate3d(0, 0, 0); height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-cell1 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Photos-cell1 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Photos-cell2 { -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0))); -webkit-transform: translate3d(0, 0, 0); height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-cell2 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Photos-cell2 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Photos-cell3 { -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0))); -webkit-transform: translate3d(0, 0, 0); height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-cell3 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Photos-cell3 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Photos-cell4 { -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0))); -webkit-transform: translate3d(0, 0, 0); height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-cell4 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Photos-cell4 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Photos-cell5 { -webkit-box-reflect: below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0))); -webkit-transform: translate3d(0, 0, 0); height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-cell5 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+body.ad-HiDPI #Photos-cell5 { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto auto; }
+#Photos-image1 { height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-image1 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Photos-image1 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Photos-image2 { height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-image2 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Photos-image2 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Photos-image3 { height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-image3 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Photos-image3 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Photos-image4 { height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-image4 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Photos-image4 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Photos-image5 { height: 100%; width: 100%; }
+body.ad-LoDPI #Photos-image5 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Photos-image5 { background-repeat-x: no-repeat; background-repeat-y: no-repeat; }

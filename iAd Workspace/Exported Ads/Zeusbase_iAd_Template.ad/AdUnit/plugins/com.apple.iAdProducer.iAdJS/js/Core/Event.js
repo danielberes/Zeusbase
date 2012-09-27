@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Event={};iAd.Event.notificationEvents={};iAd.Event.registerForNotificationEvent=function(a){iAd.Event.notificationEvents[a]=true};iAd.Event.SUPPORTS_TOUCHES=("createTouch" in document);iAd.Event.START_EVENT=iAd.Event.SUPPORTS_TOUCHES?"touchstart":"mousedown";iAd.Event.MOVE_EVENT=iAd.Event.SUPPORTS_TOUCHES?"touchmove":"mousemove";iAd.Event.END_EVENT=iAd.Event.SUPPORTS_TOUCHES?"touchend":"mouseup";iAd.Event.CANCEL_EVENT="touchcancel";iAd.Event.createUIEvent=function(a,b){return iAd.Event.SUPPORTS_TOUCHES?this.createEventWithTouch(a,b):this.createEventWithMouse(a,b)};iAd.Event.createEventWithTouch=function(b,a){var c=document.createEvent("TouchEvent");c.initTouchEvent(b,a.bubbles,a.cancelable,window,a.detail,a.screenX,a.screenY,a.clientX,a.clientY,a.ctrlKey,a.altKey,a.shiftKey,a.metaKey,a.touches,a.targetTouches,a.changedTouches,a.scale,a.rotation);return c};iAd.Event.createEventWithMouse=function(a,c){var b=document.createEvent("MouseEvent");b.initMouseEvent(a,c.bubbles,c.cancelable,document.defaultView,c.detail,c.screenX,c.screenY,c.clientX,c.clientY,c.ctrlKey,c.altKey,c.shiftKey,c.metaKey,c.metaKey,c.button,c.relatedTarget);return b};iAd.Event.preventDefault=function(a){a.preventDefault()};iAd.Event.eventHandlerForString=function(a){var b=new Function(a);return function(c){b.call(null,c)}};iAd.Event.KEYBOARD_BACKSPACE=8;iAd.Event.KEYBOARD_LEFT=37;iAd.Event.KEYBOARD_RIGHT=39;iAd.Event.KEYBOARD_UP=38;iAd.Event.KEYBOARD_DOWN=40;iAd.Event.KEYBOARD_RETURN=13;iAd.Utils.setupDisplayNames(iAd.Event,"iAd.Event");

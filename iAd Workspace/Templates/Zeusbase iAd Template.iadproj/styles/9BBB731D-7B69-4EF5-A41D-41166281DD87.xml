@@ -1,0 +1,61 @@
+<style internalID="9BBB731D-7B69-4EF5-A41D-41166281DD87">
+<name>Zeus Black Style</name>
+<includedAttributeKeys>
+    <key>-iap-reflection-offset</key>
+    <key>-iap-reflection-size</key>
+    <key>-iap-reflection-strength</key>
+    <key>-webkit-border-radius</key>
+    <key>-webkit-box-reflect</key>
+    <key>-webkit-box-shadow</key>
+    <key>-webkit-text-stroke-color</key>
+    <key>-webkit-text-stroke-width</key>
+    <key>ad-vertical-alignment</key>
+    <key>background</key>
+    <key>background-color</key>
+    <key>background-image</key>
+    <key>background-position</key>
+    <key>background-repeat</key>
+    <key>background-size</key>
+    <key>border</key>
+    <key>border-color</key>
+    <key>border-style</key>
+    <key>border-width</key>
+    <key>color</key>
+    <key>font-family</key>
+    <key>font-size</key>
+    <key>letter-spacing</key>
+    <key>line-height</key>
+    <key>opacity</key>
+    <key>text-align</key>
+    <key>text-shadow</key>
+</includedAttributeKeys>
+<properties>
+    <property name="-webkit-border-radius">0px</property>
+    <property name="-webkit-box-shadow">none</property>
+    <property name="-webkit-text-stroke-color">rgba(0, 0, 0, 0)</property>
+    <property name="-webkit-text-stroke-width">0px</property>
+    <property name="ad-vertical-alignment">middle</property>
+    <property name="background">none</property>
+    <property name="background-color">none</property>
+    <property name="background-image">none</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="border-color">rgba(0, 0, 0, 0.4)</property>
+    <property name="border-style">none</property>
+    <property name="color">#000000</property>
+    <property name="font-family">
+        <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+    </property>
+    <property name="font-size">30px</property>
+    <property name="letter-spacing">1px</property>
+    <property name="opacity">1</property>
+    <property name="text-align">center</property>
+    <property name="text-shadow">0px 1px 1px #ffffff</property>
+</properties>
+<properties state="ad-disabled">
+    <property name="opacity">0.5</property>
+</properties>
+<properties state="ad-highlighted">
+    <property name="background-size">100% 100%</property>
+    <property name="color">#000000</property>
+</properties>
+</style>

@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+.ad-flow-view .ad-flow-view-camera{position:absolute;-webkit-transform-style:preserve-3d;-webkit-transition-property:-webkit-transform;-webkit-transition-duration:500ms;-webkit-transition-timing-function:ease-out;-webkit-user-select:none}.ad-flow-view .ad-flow-view-camera{position:absolute;left:50%;width:0;height:0}.ad-flow-view .ad-flow-view-cell,.ad-flow-view .ad-flow-view-cell-wrapper{position:absolute;-webkit-user-select:none;-webkit-transition-property:-webkit-transform}.ad-flow-view.ad-animated-cells .ad-flow-view-cell,.ad-flow-view.ad-animated-cells .ad-flow-view-cell-wrapper{-webkit-transition-duration:1000ms}.ad-flow-view .ad-flow-view-cell-wrapper{top:0;left:-1px!important;width:2px;height:2px;-webkit-transform-style:preserve-3d;-webkit-transition-timing-function:cubic-bezier(0.198,0.595,0,0.9975)}.ad-flow-view .ad-flow-view-cell{display:block;-webkit-transition-timing-function:cubic-bezier(0.17,1,0,1)}

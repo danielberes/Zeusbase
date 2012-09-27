@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Class({name:"iAd.Label",superclass:iAd.View,synthesizedProperties:["numberOfLines","text","verticalAlignment"],archivedProperties:["numberOfLines","text","verticalAlignment"],cssClassName:"ad-label",collectionAccessor:"labels"});iAd.Label.VERTICAL_ALIGNMENT_TOP="top";iAd.Label.VERTICAL_ALIGNMENT_MIDDLE="middle";iAd.Label.VERTICAL_ALIGNMENT_BOTTOM="bottom";iAd.Label.prototype.init=function(a){this._text="";this._numberOfLines=1;this._verticalAlignment=iAd.Label.VERTICAL_ALIGNMENT_MIDDLE;this.callSuper(a)};iAd.Label.prototype.layerWasCreated=function(){this.callSuper();this._text=this.layer.textContent;this._textContainer=document.createElement("div");this._textContainer.textContent=this._text;this.layer.textContent="";this.layer.appendChild(this._textContainer)};iAd.Label.prototype.setText=function(a){a=(a==null)?"":String(a);if(a===this._text){return}this._text=a;this._textContainer.textContent=a};iAd.Label.prototype.setNumberOfLines=function(a){this._numberOfLines=a;if(a==0){this._textContainer.style.webkitLineClamp="100%";this._textContainer.style.overflow="visible"}else{this._textContainer.style.webkitLineClamp=a;this._textContainer.style.overflow="hidden"}};iAd.Label.prototype.setVerticalAlignment=function(a){this._verticalAlignment=a;var b="center";if(a==iAd.Label.VERTICAL_ALIGNMENT_TOP){b="start"}else{if(a==iAd.Label.VERTICAL_ALIGNMENT_BOTTOM){b="end"}}this.setLayerStyle({"-webkit-box-pack":b})};

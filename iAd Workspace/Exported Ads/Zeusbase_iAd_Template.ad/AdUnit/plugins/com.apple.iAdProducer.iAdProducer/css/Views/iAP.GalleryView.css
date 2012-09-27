@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+.iap-gallery-view.ad-scroll-view{overflow:visible}.iap-gallery-view.iap-animated .ad-cell{-webkit-transition-property:all;-webkit-transition-duration:.25s}.iap-gallery-view.iap-unedited .ad-hosting-layer{background:transparent}.iap-gallery-view .iap-gallery-view-mask{position:absolute;pointer-events:none;left:0;top:0;width:100%;height:100%}.iap-gallery-view.iap-clips-to-bounds .iap-gallery-view-mask{overflow:hidden}.iap-gallery-view.iap-horizontal .iap-gallery-view-mask{height:200%;top:-50px}.iap-gallery-view.iap-vertical .iap-gallery-view-mask{width:200%;left:-50px}.ad-scroll-view>.iap-gallery-view-mask>.ad-hosting-layer{position:absolute;width:100%;height:50%;padding:0;margin:0;-webkit-transform:translate3d(0,0,0)}.ad-transition-controller-visible .ad-scroll-view>.iap-gallery-view-mask>.ad-hosting-layer{pointer-events:auto}.iap-gallery-view.iap-vertical>.iap-gallery-view-mask>.ad-hosting-layer{left:50px}.iap-gallery-view.iap-horizontal>.iap-gallery-view-mask>.ad-hosting-layer{top:50px}.iap-gallery-view>.ad-page-control{-webkit-transform-origin:left top}.iap-gallery-view>.ad-page-control>div{-webkit-transform:translate3d(0,0,0)}.iap-gallery-view>.iap-gallery-view-mask>.ad-hosting-layer>.ad-cell{display:none;-webkit-transform:translate3d(0,0,0)}

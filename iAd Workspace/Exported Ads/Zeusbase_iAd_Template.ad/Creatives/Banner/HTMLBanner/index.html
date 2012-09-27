@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zeusbase iAd Template</title>
+<meta charset="utf-8">
+
+<style type="text/css">
+/**
+*
+* Copyright © 2009-2012 Apple Inc.  All rights reserved.
+*
+**/
+
+
+body{margin:0}div{position:absolute;margin:0;padding:0;border:0 solid transparent}.ad-view{display:-webkit-box;-webkit-box-sizing:border-box}.iap-view-controller{-webkit-perspective:400px;-webkit-perspective-origin:50% 50%;-webkit-backface-visibility:hidden}.iap-wrapper{position:absolute;-webkit-transform:translate3d(0,0,0);-webkit-transform-style:preserve-3d}.iap-wrapped{width:100%!important;height:100%!important}.iap-wrapped.ad-label{overflow:visible}body.iap-orientation-change .iap-view-controller{display:none}
+
+
+.ad-label,.ad-label>div{display:-webkit-box;-webkit-box-pack:center;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;white-space:pre-line}.ad-label>div{width:100%}.ad-label div{position:static}
+
+
+.ad-image-view{-webkit-background-origin:content-box;-webkit-background-size:100% 100%;-webkit-transform:translate3d(0,0,0)}#Banner { height: 66px; width: 768px; }
+#Banner { background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66ccff), color-stop(100%, #000000)); background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+.ad-landscape #Banner { height: 66px; width: 1024px; }
+#Banner-bannerLabel { color: #ffffff; font-family: HelveticaNeue; font-size: 23px; height: 30px; left: 159px; overflow: hidden; text-align: center; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); top: 18px; width: 409px; }
+#Banner-bannerLabel { background-position: left top; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: auto; }
+.ad-landscape #Banner-bannerLabel { height: 30px; left: 280.167px; top: 18px; width: 409px; }
+#Banner-bannerImage { background-position: left top; background-repeat: no-repeat; background-size: 28px 28px; height: 33px; left: 21px; top: 18px; width: 29px; }
+#Banner-bannerImage { background-image: url(assets/Icon@2x.png); }
+.ad-landscape #Banner-bannerImage { height: 33px; left: 32.833px; top: 18px; width: 29px; }
+
+@font-face { font-family: HelveticaNeue; src: local('HelveticaNeue'); }
+/*
+ * Put globally accessible CSS for banners in this file.
+ *
+ * Referencing views by class name:
+ *   .customClass {
+ *
+ *   }
+ *
+ * Referencing views by outlet name:
+ *   #PageName [ad-outlet="outletName"] { 
+ *
+ *   }
+ */
+
+</style>
+</head>
+<body>
+<script type="text/javascript">/**
+*
+* Copyright © 2009-2012 Apple Inc.  All rights reserved.
+*
+**/
+
+
+var iAd={};iAd.Utils={};iAd.Utils.setupDisplayNames=function(){};iAd.CSS={};iAd.CSS.isClassNameValid=function(){return true};/**
+*
+* Copyright © 2009-2012 Apple Inc.  All rights reserved.
+*
+**/
+
+
+iAd.Element={};iAd.Element.HTML5_CUSTOM_ATTRIBUTE_PREFIX="data-";iAd.Element.ATTRIBUTE_PREFIX="ad-";iAd.Element.elementFromString=function(d){var a=document.createRange();a.selectNode(document.body);var b=a.createContextualFragment(d);var c=b.firstChild;while(c.nodeType!=Node.ELEMENT_NODE&&c.nextSibling){c=c.nextSibling}return c};iAd.Element.hasCustomAttribute=function(b,a){return b.hasAttribute(iAd.Element.HTML5_CUSTOM_ATTRIBUTE_PREFIX+a)||b.hasAttribute(a)};iAd.Element.getCustomAttribute=function(c,a){var b=c.getAttribute(iAd.Element.HTML5_CUSTOM_ATTRIBUTE_PREFIX+a);return iAd.Utils.objectIsString(b)?b:c.getAttribute(a)};iAd.Element.SUPPORTS_CLASS_LIST=("classList" in document.documentElement);Element.prototype.hasClassName=iAd.Element.SUPPORTS_CLASS_LIST?function(a){return iAd.CSS.isClassNameValid(a)&&this.classList.contains(a)}:function(a){return new RegExp("(?:^|\\s+)"+a+"(?:\\s+|$)").test(this.className)};Element.prototype.addClassName=iAd.Element.SUPPORTS_CLASS_LIST?function(a){if(!iAd.CSS.isClassNameValid(a)||this.classList.contains(a)){return false}this.classList.add(a);return true}:function(a){if(!this.hasClassName(a)){this.className=[this.className,a].join(" ");return true}else{return false}};Element.prototype.removeClassName=iAd.Element.SUPPORTS_CLASS_LIST?function(a){if(iAd.CSS.isClassNameValid(a)&&this.classList.contains(a)){this.classList.remove(a);return true}return false}:function(b){if(this.hasClassName(b)){var a=this.className;this.className=a.replace(new RegExp("(?:^|\\s+)"+b+"(?:\\s+|$)","g")," ");return true}return false};Element.prototype.toggleClassName=iAd.Element.SUPPORTS_CLASS_LIST?function(a,b){if(iAd.CSS.isClassNameValid(a)){if(b==null){b=!this.classList.contains(a)}this.classList[b?"add":"remove"](a)}}:function(a,b){if(b==null){b=!this.hasClassName(a)}this[b?"addClassName":"removeClassName"](a)};iAd.Utils.setupDisplayNames(Element,"Element");/**
+*
+* Copyright © 2009-2012 Apple Inc.  All rights reserved.
+*
+**/
+
+
+document.body.addClassName(window.devicePixelRatio>=2?"ad-HiDPI":"ad-LoDPI");var iAP={SUPPORTS_APPEAR_EVENTS:window.banner&&("contentVisible" in window.banner),banner:{outlets:{},startActionList:function(){}},EventDelegate:{registerViewControllerEventDelegate:function(b,a){this.delegate=a}}};iAP.iOS_VERSION=navigator.userAgent.match(/OS ([0-9_]+)/);iAP.iOS_VERSION=iAP.iOS_VERSION?iAP.iOS_VERSION[1].replace(/_/g,"."):null;iAP.iOSVersionLessThan=function(a){if(iAP.iOS_VERSION==null){return false}return iAP.compareiOSVersions(iAP.iOS_VERSION,a)==-1};iAP.compareiOSVersions=function(f,e){var h=f.split(".");var g=e.split(".");var a=Math.max(h.length,g.length);for(var d=0;d<a;d++){var c=parseInt(h[d]||"0",10),b=parseInt(g[d]||"0",10);if(b>c){return -1}else{if(c>b){return 1}}}return 0};document.addEventListener("DOMContentLoaded",function(c){var d=document.querySelectorAll("[ad-outlet]");for(var a=0,b=d.length;a<b;a++){iAP.banner.outlets[d[a].getAttribute("ad-outlet")]=d[a]}if(iAP.EventDelegate.delegate){iAP.EventDelegate.delegate.apply(iAP.banner);delete iAP.EventDelegate.delegate}if(iAP.banner.onBannerWillAppear){iAP.banner.onBannerWillAppear(c)}},false);if(iAP.SUPPORTS_APPEAR_EVENTS){window.addEventListener("ADBannerContentVisibilityChanged",function(a){if(iAP.banner.onBannerDidAppear&&banner.contentVisible){iAP.banner.onBannerDidAppear(a)}else{if(iAP.banner.onBannerDidDisappear&&!banner.contentVisible){iAP.banner.onBannerDidDisappear(a)}}},false)}else{window.addEventListener("load",function(a){if(iAP.banner.onBannerDidAppear){iAP.banner.onBannerDidAppear(a)}},false)}iAP._isLandscape=function(){return !(window.innerWidth==320||window.innerWidth==768)};iAP.isLandscape=function(){var a=Math.abs(window.orientation)==90;return a};document.addEventListener("DOMContentLoaded",function(){if(window.innerWidth>500&&window.innerHeight>500&&iAP.iOSVersionLessThan("5.0")&&!iAP.iOSVersionLessThan("4.3")){document.body.addClassName("iap-orientation-change")}document.body.toggleClassName("ad-landscape",iAP._isLandscape())},false);iAP.handleOrientationChange=function(){document.body.removeClassName("iap-orientation-change");document.body.toggleClassName("ad-landscape",iAP.isLandscape());if(iAP.orientationDidChange){iAP.orientationDidChange()}localStorage.setItem("iAP:Banner:Orientation",window.orientation)};window.addEventListener("orientationchange",function(a){if(a.type=="orientationchange"){iAP.handleOrientationChange()}},false);</script>
+<script type="text/javascript" src="js/Banner.js"></script>
+
+<div id="Banner" class="Banner iap-view-controller ">
+<div ad-number-of-lines="0" ad-outlet="bannerLabel" id="Banner-bannerLabel" class="ad-label ad-view"><div>Zeusbase iAd Template
+</div></div><div ad-auto-sized="false" ad-image-size="28px 28px" ad-image-position="left top" ad-image-repeat="no-repeat" ad-outlet="bannerImage" ad-asset-droppable="true" ad-small="true" ad-has-hidpi-version="true" id="Banner-bannerImage" class="ad-image-view ad-view"></div>
+</div>
+</body>
+</html>

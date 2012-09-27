@@ -1,0 +1,426 @@
+<page internalID="D7F59E6A-F031-4876-BDC0-65B4394DC41D">
+<name>Photos</name>
+<pageRole>2</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.ViewController</pageClassName>
+<properties>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">cover</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>370479007.86</date>
+</lastModifiedDate>
+<components>
+    <component internalID="A0E90564-AD04-4D6E-BC29-8BE06FC13B89">
+        <componentClassName>iAP.SharedView</componentClassName>
+        <outlet>iap-background-layer</outlet>
+        <outletNameFromTemplate>sharedView</outletNameFromTemplate>
+        <templateName>Shared Layer</templateName>
+        <properties>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-iap-shared-layer-position">
+                <integer>2</integer>
+            </property>
+            <property name="ad-clips-to-bounds">false</property>
+            <property name="ad-outlet">iap-background-layer</property>
+            <property name="ad-repositions-subviews">false</property>
+            <property name="ad-view-controller-id">
+                <reference representedObjectID="9CEAED3F-2981-474F-824B-3285724EE07D" representedObjectClassName="STPage"/>
+            </property>
+            <property name="height">100%</property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>0.0</real>
+            </property>
+            <property name="width">100%</property>
+        </properties>
+    </component>
+    <component internalID="AF7D199D-E2E4-4FF5-9CAF-5DFA5A39FB90">
+        <componentClassName>iAP.GalleryView</componentClassName>
+        <outlet>photosGalleryView</outlet>
+        <outletNameFromTemplate>galleryView</outletNameFromTemplate>
+        <templateName>Gallery View</templateName>
+        <properties>
+            <property name="-iap-original-size">{210, 280}</property>
+            <property name="ad-cell-length">65%</property>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-focused-index">
+                <integer>2</integer>
+            </property>
+            <property name="ad-orientation">horizontal</property>
+            <property name="ad-outlet">photosGalleryView</property>
+            <property name="ad-padding-x">-35px</property>
+            <property name="ad-padding-y">0px</property>
+            <property name="ad-page-control-color">#3d4042</property>
+            <property name="ad-page-control-offset">
+                <real>40.0</real>
+            </property>
+            <property name="ad-page-control-position">after</property>
+            <property name="ad-page-control-visible">true</property>
+            <property name="ad-scale-factor">
+                <real>0.75</real>
+            </property>
+            <property name="background-position">left top</property>
+            <property name="background-repeat">no-repeat</property>
+            <property name="background-repeat-x">no-repeat</property>
+            <property name="background-repeat-y">no-repeat</property>
+            <property name="background-size">auto auto</property>
+            <property name="height">540px</property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>80.0</real>
+            </property>
+            <property name="width">
+                <real>1024.0</real>
+            </property>
+        </properties>
+        <children>
+            <component internalID="E261B741-95CB-4805-8D79-A1EB8A112E2C">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell1</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.13</property>
+                    <property name="-iap-reflection-strength">75%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell1</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="755D6446-FC8D-4774-938E-2B9F56A0280D">
+                        <componentClassName>iAd.ImageView</componentClassName>
+                        <outlet>image1</outlet>
+                        <outletNameFromTemplate>image</outletNameFromTemplate>
+                        <templateName>Image</templateName>
+                        <properties>
+                            <property name="-iap-aspect-ratio-locked">false</property>
+                            <property name="-iap-original-size">{0, 0}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-auto-sized">false</property>
+                            <property name="ad-clips-to-bounds">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-image-position">left top</property>
+                            <property name="ad-image-repeat">no-repeat</property>
+                            <property name="ad-image-size">auto auto</property>
+                            <property name="ad-outlet">image1</property>
+                            <property name="background-repeat-x">no-repeat</property>
+                            <property name="background-repeat-y">no-repeat</property>
+                            <property name="height">100%</property>
+                            <property name="width">100%</property>
+                        </properties>
+                    </component>
+                </children>
+            </component>
+            <component internalID="6918B679-1151-4DAD-8CD9-369CB38A555B">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell2</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.13</property>
+                    <property name="-iap-reflection-strength">75%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell2</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="0C1CC846-3C07-4346-8BF6-F354AC12A429">
+                        <componentClassName>iAd.ImageView</componentClassName>
+                        <outlet>image2</outlet>
+                        <outletNameFromTemplate>image</outletNameFromTemplate>
+                        <templateName>Image</templateName>
+                        <properties>
+                            <property name="-iap-aspect-ratio-locked">false</property>
+                            <property name="-iap-original-size">{0, 0}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-auto-sized">false</property>
+                            <property name="ad-clips-to-bounds">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-image-position">left top</property>
+                            <property name="ad-image-repeat">no-repeat</property>
+                            <property name="ad-image-size">auto auto</property>
+                            <property name="ad-outlet">image2</property>
+                            <property name="background-repeat-x">no-repeat</property>
+                            <property name="background-repeat-y">no-repeat</property>
+                            <property name="height">100%</property>
+                            <property name="width">100%</property>
+                        </properties>
+                    </component>
+                </children>
+            </component>
+            <component internalID="8074BCB7-D3A4-4130-9A14-BD9FD607B04D">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell3</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.13</property>
+                    <property name="-iap-reflection-strength">75%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell3</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="98E40BE3-FDFB-42A4-B4AB-D22732E88980">
+                        <componentClassName>iAd.ImageView</componentClassName>
+                        <outlet>image3</outlet>
+                        <outletNameFromTemplate>image</outletNameFromTemplate>
+                        <templateName>Image</templateName>
+                        <properties>
+                            <property name="-iap-aspect-ratio-locked">false</property>
+                            <property name="-iap-original-size">{0, 0}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-auto-sized">false</property>
+                            <property name="ad-clips-to-bounds">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-image-position">left top</property>
+                            <property name="ad-image-repeat">no-repeat</property>
+                            <property name="ad-image-size">auto auto</property>
+                            <property name="ad-outlet">image3</property>
+                            <property name="background-repeat-x">no-repeat</property>
+                            <property name="background-repeat-y">no-repeat</property>
+                            <property name="height">100%</property>
+                            <property name="width">100%</property>
+                        </properties>
+                    </component>
+                </children>
+            </component>
+            <component internalID="BEF622B2-9124-42FC-822F-E9F7B2D98D46">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell4</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.13</property>
+                    <property name="-iap-reflection-strength">75%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell4</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="4B8AA300-EC72-4382-9972-70F30B947323">
+                        <componentClassName>iAd.ImageView</componentClassName>
+                        <outlet>image4</outlet>
+                        <outletNameFromTemplate>image</outletNameFromTemplate>
+                        <templateName>Image</templateName>
+                        <properties>
+                            <property name="-iap-aspect-ratio-locked">false</property>
+                            <property name="-iap-original-size">{0, 0}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-auto-sized">false</property>
+                            <property name="ad-clips-to-bounds">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-image-position">left top</property>
+                            <property name="ad-image-repeat">no-repeat</property>
+                            <property name="ad-image-size">auto auto</property>
+                            <property name="ad-outlet">image4</property>
+                            <property name="background-repeat-x">no-repeat</property>
+                            <property name="background-repeat-y">no-repeat</property>
+                            <property name="height">100%</property>
+                            <property name="width">100%</property>
+                        </properties>
+                    </component>
+                </children>
+            </component>
+            <component internalID="33A3B477-9104-46A0-8B13-0B86B7F14569">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell5</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.13</property>
+                    <property name="-iap-reflection-strength">75%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.75)), color-stop(87%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell5</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="F3065593-9DF4-4FF2-8A87-1A949E5AD4AE">
+                        <componentClassName>iAd.ImageView</componentClassName>
+                        <outlet>image5</outlet>
+                        <outletNameFromTemplate>image</outletNameFromTemplate>
+                        <templateName>Image</templateName>
+                        <properties>
+                            <property name="-iap-aspect-ratio-locked">false</property>
+                            <property name="-iap-original-size">{0, 0}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-auto-sized">false</property>
+                            <property name="ad-clips-to-bounds">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-image-position">left top</property>
+                            <property name="ad-image-repeat">no-repeat</property>
+                            <property name="ad-image-size">auto auto</property>
+                            <property name="ad-outlet">image5</property>
+                            <property name="background-repeat-x">no-repeat</property>
+                            <property name="background-repeat-y">no-repeat</property>
+                            <property name="height">100%</property>
+                            <property name="width">100%</property>
+                        </properties>
+                    </component>
+                </children>
+            </component>
+        </children>
+    </component>
+    <component internalID="E9F35AFA-1405-4B02-8A57-B4540E596E06">
+        <componentClassName>iAd.Label</componentClassName>
+        <outlet>photosLabel</outlet>
+        <outletNameFromTemplate>title</outletNameFromTemplate>
+        <properties>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-number-of-lines">0</property>
+            <property name="ad-outlet">photosLabel</property>
+            <property name="ad-text">Photos
+</property>
+            <property name="color">rgba(0, 0, 0, 0.7)</property>
+            <property name="font-family">
+                <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+            </property>
+            <property name="font-size">28px</property>
+            <property name="height">
+                <real>38.0</real>
+            </property>
+            <property name="left">
+                <real>352.0</real>
+            </property>
+            <property name="text-align">center</property>
+            <property name="top">
+                <real>20.0</real>
+            </property>
+            <property name="width">
+                <real>320.0</real>
+            </property>
+        </properties>
+        <style>
+            <stylereference>39B4EB7E-F5BC-4183-9620-A44095875B24</stylereference>
+        </style>
+    </component>
+    <component internalID="D7BDF667-9CB7-45A5-B8AA-EEFC1BD5A3D0">
+        <componentClassName>iAP.SharedView</componentClassName>
+        <outlet>menuSharedLayer</outlet>
+        <outletNameFromTemplate>sharedView</outletNameFromTemplate>
+        <templateName>Shared Layer</templateName>
+        <properties>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-iap-shared-layer-position">
+                <integer>1</integer>
+            </property>
+            <property name="ad-clips-to-bounds">false</property>
+            <property name="ad-outlet">menuSharedLayer</property>
+            <property name="ad-repositions-subviews">
+                <true/>
+            </property>
+            <property name="ad-view-controller-id">
+                <reference representedObjectID="F9BA01F4-D054-43EF-B623-05B773C35457" representedObjectClassName="STPage"/>
+            </property>
+            <property name="height">
+                <real>69.0</real>
+            </property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>699.0</real>
+            </property>
+            <property name="width">
+                <real>1024.0</real>
+            </property>
+        </properties>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="41F3D7AF-D4C8-4C67-9674-FCCBAB5DF0DC">
+        <name>Page Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="9784942B-D849-4871-BCCF-8CD729EE985F">
+        <name>Page Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>41F3D7AF-D4C8-4C67-9674-FCCBAB5DF0DC</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>9784942B-D849-4871-BCCF-8CD729EE985F</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>5</listIndex>
+</page>

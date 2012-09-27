@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+.ad-scroll-indicator{display:block;position:absolute;-webkit-transform:translate3d(0,0,0);-webkit-transition-property:opacity;-webkit-transition-duration:.25s;z-index:10}.ad-scroll-indicator>*{position:absolute;top:0;left:0;-webkit-transform:translate3d(0,0,0)}.ad-scroll-indicator>div:nth-of-type(2){-webkit-transform-origin:left top}.ad-scroll-indicator.ad-horizontal>*{width:3px;height:7px}.ad-scroll-indicator.ad-horizontal>div:nth-of-type(2){left:3px;width:1px}.ad-scroll-indicator.ad-horizontal>div:nth-of-type(3){background-position:-4px 0}.ad-scroll-indicator.ad-vertical>*{width:7px;height:3px}.ad-scroll-indicator.ad-vertical>div:nth-of-type(2){top:3px;height:1px}.ad-scroll-indicator.ad-vertical>div:nth-of-type(3){background-position:0 -4px}.ad-scroll-indicator.ad-indicator-default>div{background-image:url('../../assets/scroll-indicator-default.png')}body.ad-HiDPI .ad-scroll-indicator.ad-indicator-default>div{background-image:url('../../assets/scroll-indicator-default@2x.png');-webkit-background-size:7px 7px}.ad-scroll-indicator.ad-indicator-black>div{background-image:url('../../assets/scroll-indicator-black.png')}body.ad-HiDPI .ad-scroll-indicator.ad-indicator-black>div{background-image:url('../../assets/scroll-indicator-black@2x.png');-webkit-background-size:7px 7px}.ad-scroll-indicator.ad-indicator-white>div{background-image:url('../../assets/scroll-indicator-white.png')}body.ad-HiDPI .ad-scroll-indicator.ad-indicator-white>div{background-image:url('../../assets/scroll-indicator-white@2x.png');-webkit-background-size:7px 7px}

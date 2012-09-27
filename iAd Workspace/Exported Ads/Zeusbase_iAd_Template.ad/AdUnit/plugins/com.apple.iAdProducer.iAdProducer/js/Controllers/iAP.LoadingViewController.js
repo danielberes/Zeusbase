@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Class({name:"iAP.LoadingViewController",superclass:iAP.ViewController,synthesizedProperties:["minimumDisplayTime"],archivedProperties:["minimumDisplayTime"]});iAP.LoadingViewController.prototype.init=function(a){this._minimumDisplayTime=0;this.callSuper(a);iAP.LoadingViewController.sharedTransitionController.loadingViewController=this};iAP.LoadingViewController.prototype.setMinimumDisplayTime=function(a){if(a==this._minimumDisplayTime){return}this._minimumDisplayTime=a;iAP.LoadingViewController.sharedTransitionController.loadingViewControllerMinimumDisplayTime=a};iAP.LoadingViewController.prototype.viewWillAppear=function(b){var a=iAP.LoadingViewController.sharedTransitionController.previouslyVisibleViewController;if(a){this.contentView.size=a.contentView.size;this.orientation=a.orientation}this.callSuper(b);this.view.layer.addClassName("ad-loading-view")};iAP.LoadingViewController.prototype.setContentView=function(c){this.callSuper(c);for(var a=0,b=c.subviews.length;a<b;a++){c.subviews[a].autoresizingMask=iAd.View.AUTORESIZING_FLEXIBLE_LEFT_MARGIN|iAd.View.AUTORESIZING_FLEXIBLE_RIGHT_MARGIN|iAd.View.AUTORESIZING_FLEXIBLE_TOP_MARGIN|iAd.View.AUTORESIZING_FLEXIBLE_BOTTOM_MARGIN}};Object.defineProperty(iAP.LoadingViewController,"sharedTransitionController",{get:function(){if(!iAP.LoadingViewController.hasOwnProperty("_sharedTransitionController")){iAP.LoadingViewController.sharedTransitionController=iAd.RootViewController.sharedRootViewController.navigationController.backingTransitionController}return iAP.LoadingViewController._sharedTransitionController},set:function(a){iAP.LoadingViewController._sharedTransitionController=a}});

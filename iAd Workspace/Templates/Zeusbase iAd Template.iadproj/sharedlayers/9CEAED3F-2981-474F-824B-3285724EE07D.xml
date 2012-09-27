@@ -1,0 +1,139 @@
+<page internalID="9CEAED3F-2981-474F-824B-3285724EE07D">
+<name>Background</name>
+<pageRole>10</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.ViewController</pageClassName>
+<preloadSettings>YnBsaXN0MDDUAQIDBAUGISJYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKcHCBESGBkaVSRudWxs0wkKCwwOEFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzoQ2AAqEPgAOABl8QJDAwMTYzNzU2LTNBNDAtNDMxMS1BQTk1LTYxQjNBQUJCN0RERtMJCgsTFRChFIAEoRaABYAGXmRlZmF1bHRTZXR0aW5nCdIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5ox0fIFxOU0RpY3Rpb25hcnlYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRIyRUcm9vdIABAAgAEQAaACMALQAyADcAPwBFAEwAVABfAGYAaABqAGwAbgBwAJcAngCgAKIApACmAKgAtwC4AL0AyADRAOcA6wD4AQEBEwEWARsAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAABHQ==</preloadSettings>
+<properties>
+    <property name="-iap-background-inspector-index">
+        <integer>3</integer>
+    </property>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background">-webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6d2db), color-stop(100%, #a2b2be))</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">100% 100%</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>370479007.86</date>
+</lastModifiedDate>
+<components>
+    <component internalID="E12406E7-B2AA-499A-A246-C65BA29510F0">
+        <componentClassName>iAd.ImageView</componentClassName>
+        <outlet>chrome</outlet>
+        <outletNameFromTemplate>image</outletNameFromTemplate>
+        <templateName>Image - Internal</templateName>
+        <properties>
+            <property name="-iap-aspect-ratio-locked">true</property>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-webkit-transform">rotate(0deg)</property>
+            <property name="ad-asset-droppable">true</property>
+            <property name="ad-auto-sized">false</property>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-has-hidpi-version">true</property>
+            <property name="ad-image">
+                <assetreference>00163756-3A40-4311-AA95-61B3AABB7DDF</assetreference>
+            </property>
+            <property name="ad-image-position">left top</property>
+            <property name="ad-image-repeat">no-repeat</property>
+            <property name="ad-image-size">100% 100%</property>
+            <property name="ad-outlet">chrome</property>
+            <property name="height">
+                <real>767.502</real>
+            </property>
+            <property name="left">
+                <real>1.751</real>
+            </property>
+            <property name="top">
+                <real>0.293</real>
+            </property>
+            <property name="width">
+                <real>511.0</real>
+            </property>
+        </properties>
+    </component>
+    <component internalID="F410C5DE-3D0F-48DE-8169-49C2E349E2FD">
+        <componentClassName>iAd.ImageView</componentClassName>
+        <outlet>chrome2</outlet>
+        <outletNameFromTemplate>image</outletNameFromTemplate>
+        <templateName>Image - Internal</templateName>
+        <properties>
+            <property name="-iap-aspect-ratio-locked">true</property>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="ad-asset-droppable">true</property>
+            <property name="ad-auto-sized">false</property>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-has-hidpi-version">true</property>
+            <property name="ad-image">
+                <assetreference>00163756-3A40-4311-AA95-61B3AABB7DDF</assetreference>
+            </property>
+            <property name="ad-image-position">left top</property>
+            <property name="ad-image-repeat">no-repeat</property>
+            <property name="ad-image-size">100% 100%</property>
+            <property name="ad-outlet">chrome2</property>
+            <property name="height">
+                <real>767.0</real>
+            </property>
+            <property name="left">
+                <real>513.0</real>
+            </property>
+            <property name="top">
+                <real>0.0</real>
+            </property>
+            <property name="width">
+                <real>510.996</real>
+            </property>
+        </properties>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="AA850C95-CCDF-4136-89A2-05F0BAADFA26">
+        <name>Layer Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="C63ECFF6-D086-4940-A09F-9BE1A5AD88E5">
+        <name>Layer Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>AA850C95-CCDF-4136-89A2-05F0BAADFA26</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>C63ECFF6-D086-4940-A09F-9BE1A5AD88E5</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>2</listIndex>
+</page>

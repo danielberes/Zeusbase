@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zeusbase iAd Template</title>
+<meta charset="utf-8">
+
+<!-- stylesheet files -->
+<style type="text/css">
+body.ad-LoDPI#root { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+body.ad-HiDPI#root { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+#root { width: 1024px; height: 768px; }
+@font-face { font-family: HelveticaNeue; src: local('HelveticaNeue'); }
+@font-face { font-family: HelveticaNeue-Bold; src: local('HelveticaNeue-Bold'); }
+</style>
+<style type="text/css">
+#Background { height: 768px; width: 1024px; }
+body.ad-LoDPI #Background { background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6d2db), color-stop(100%, #a2b2be)); background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+body.ad-HiDPI #Background { background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c6d2db), color-stop(100%, #a2b2be)); background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+#Background-image { height: 767.502px; left: 1.751px; top: 0.293px; width: 511px; }
+#Background-image-1 { height: 767px; left: 513px; top: 0px; width: 510.996px; }
+
+</style>
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/iAd.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/iAd-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/View.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/View-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controls/Control.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/Label.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controls/Button.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controls/Button-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdProducer/css/Views/iAP.SharedView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/FlowView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/FlowView-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Media/VideoView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Media/VideoPlayer.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Media/VideoPlayer-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/ScrollIndicator.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/ScrollView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controls/PageControl.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controls/PageControl-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdProducer/css/Views/iAP.GalleryView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/ImageView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/ImageView-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Views/ActivityIndicatorView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Bindings/Maps/MapView.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Bindings/Maps/MapView-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controllers/TransitionController.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controllers/TransitionController-RuntimeAdditions.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdJS/css/Controllers/NavigationController.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdProducer/css/Controllers/iAP.ViewController.css">
+<link type="text/css" rel="stylesheet" href="plugins/com.apple.iAdProducer.iAdProducer/css/Controllers/iAP.LoadingViewController.css">
+<link type="text/css" rel="stylesheet" href="assets/Global.css">
+
+<!-- script files -->
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/iAd.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Utils.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Utils-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Class.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Class-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Object.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Geometry.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/CSS.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/CSS-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Element.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Console.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Array.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Device.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/String.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Event.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/EventTarget.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Analytics/EventTarget-Analytics.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Transition.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/View.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/View-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controls/Control.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/Label.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controls/Button.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controls/Button-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/SpatialNavigationManager-shim.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Views/iAP.SharedView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Number.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/Cell.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/CellContainerDeclarativeDataSource.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/CellContainer.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/CellContainer-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/FlowView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/FlowView-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Analytics/Analytics.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Path.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Path-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Image.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Image-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/EventTriage.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/Media.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/Media-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/MediaAdapterAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/MediaAdapterAdditions-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/MediaAdapterComponents.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/Video.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/VideoView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/VideoAdapters.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/iTunesMediaAdapterAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/MediaPlayer.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/MediaPlayer-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/VideoPlayer.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/VideoPlayer-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ScrollViewPanGestureRecognizer.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ScrollIndicator.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ScrollView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ScrollView-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/RootView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/RootView-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/HostScrollView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controls/PageControl.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controls/PageControl-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Views/iAP.GalleryView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ScriptAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ScriptAction-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Actions/iAP.CancelActionListAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ImageView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ImageView-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Actions/iAP.MediaPlayerAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Actions/iAP.VideoPlayerAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Actions/iAP.MediaAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/Audio.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Media/AudioAdapters.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Actions/iAP.AudioAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ActivityIndicatorView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ActivityIndicatorView-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapOverlay.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapCoordinate.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapRegion.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapAnnotation.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapUserLocation.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapView.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Maps/MapView-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ActionListManager.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/Loader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/ImageLoader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/ImageLoader-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/StyleLoader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/StyleLoader-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/LoaderManager.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/LoaderBatch.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/XHRLoader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/VideoLoader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Load/ScriptLoader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ViewControllerRequiredFilesLoader.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Archiver.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ViewController.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Analytics/ViewController-Analytics.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/RootViewController.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ViewProcessor.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/ViewControllerReferencingViewProcessor.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Transaction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/TransitionController.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/NavigationController.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/NavigationController-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/NavigationViewProcessor.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Actions/iAP.TransitionToPageAction.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ViewTransitions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Views/ViewTransitions-RuntimeAdditions.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Controllers/iAP.EventDelegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Controllers/OutletsViewProcessor.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Bindings.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/Shim/ADAd.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Core/Function.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdJS/js/Bindings/DeviceBindings.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Controllers/iAP.ViewController.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Controllers/iAP.RootViewController.js" charset="utf-8"></script>
+<script type="text/javascript" src="plugins/com.apple.iAdProducer.iAdProducer/js/Controllers/iAP.LoadingViewController.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video1Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video2Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video3Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video4Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video5Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video6Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Videos$video7Delegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/Map$mapViewDelegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/MenuDelegate.js" charset="utf-8"></script>
+<script type="text/javascript" src="assets/Global.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+iAP.RootViewController.createRootViewController({
+  "actionLists" : [],
+  "analytics" : {
+    "messages" : {},
+    "messagesForEvents" : []
+  },
+  "hasHiDPIVersion" : true,
+  "id" : "root",
+  "properties" : {
+    "backgroundAudioShouldLoop" : true,
+    "backgroundLayerVisible" : true,
+    "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+    "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+    "bottomAnchoredSharedViewIDs" : [],
+    "buildInActionListShouldDelayTransition" : true,
+    "buildInActionListShouldOccurAfterTransition" : true,
+    "buildOutActionListShouldDelayTransition" : true,
+    "initialViewControllerID" : "Splash",
+    "orientation" : 1,
+    "targetDevice" : "iPad",
+    "topAnchoredSharedViewIDs" : [],
+    "transitionDuration" : "0.5",
+    "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+    "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+  },
+  "requiredFileURIs" : {
+    "images" : [],
+    "stylesheets" : []
+  },
+  "type" : "iAP.RootViewController",
+  "videoWifiToCellularMapping" : {}
+});
+</script>
+<script type="application/vnd.apple.iadjs; type=view-controllers" charset="utf-8">
+[
+  {
+    "actionLists" : [],
+    "hasHiDPIVersion" : true,
+    "id" : "Loading",
+    "properties" : {
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Loading.html",
+      "images" : [
+        "assets/chrome.png"
+      ],
+      "stylesheets" : [
+        "css/Loading.css"
+      ]
+    },
+    "type" : "iAP.LoadingViewController"
+  },
+  {
+    "actionLists" : [],
+    "hasHiDPIVersion" : true,
+    "id" : "Background",
+    "isBackgroundLayer" : true,
+    "properties" : {
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "images" : [
+        "assets/chrome.png"
+      ],
+      "stylesheets" : []
+    },
+    "type" : "iAP.ViewController"
+  },
+  {
+    "actionLists" : [
+      {
+        "actions" : [
+          {
+            "duration" : 1,
+            "name" : "Splash-PageAppear-0",
+            "selector" : "#Splash-splashImage",
+            "type" : "css"
+          }
+        ],
+        "cssClassName" : "ad-view-builds-in-action-list",
+        "id" : "Splash-PageAppear",
+        "iterationCount" : 1,
+        "name" : "Page Appear"
+      }
+    ],
+    "hasHiDPIVersion" : true,
+    "id" : "Splash",
+    "properties" : {
+      "autoAdvanceCondition" : "next-page-loaded",
+      "autoAdvanceToNextViewController" : true,
+      "backgroundLayerVisible" : true,
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : false,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "disableLoadingViewController" : true,
+      "minimumDelayBeforeTransition" : 2,
+      "nextViewControllerID" : "Preroll",
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Splash.html",
+      "images" : [],
+      "stylesheets" : [
+        "css/Splash.css"
+      ]
+    },
+    "type" : "iAP.ViewController"
+  },
+  {
+    "actionLists" : [
+      {
+        "actions" : [
+          {
+            "asynchronous" : false,
+            "className" : "iAP.VideoPlayerAction",
+            "delay" : 0,
+            "name" : "Preroll-PageAppear-0",
+            "properties" : {
+              "asynchronous" : "false",
+              "duration" : 0.0001,
+              "id" : "PlayVideo",
+              "methodName" : "play",
+              "targetViewId" : "Preroll-prerollVideo"
+            },
+            "type" : "script"
+          }
+        ],
+        "cssClassName" : "ad-view-builds-in-action-list",
+        "id" : "Preroll-PageAppear",
+        "iterationCount" : 1,
+        "name" : "Page Appear"
+      }
+    ],
+    "hasHiDPIVersion" : true,
+    "id" : "Preroll",
+    "properties" : {
+      "autoAdvanceCondition" : "next-page-loaded",
+      "autoAdvanceToNextViewController" : true,
+      "backgroundLayerVisible" : true,
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "minimumDelayBeforeTransition" : 0,
+      "nextViewControllerID" : "Photos",
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [],
+      "transitionDuration" : "0.5",
+      "viewControllerIDsToPreload" : [
+        "Loading"
+      ],
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Preroll.html",
+      "images" : [],
+      "stylesheets" : [
+        "css/Preroll.css"
+      ]
+    },
+    "type" : "iAP.ViewController"
+  },
+  {
+    "actionLists" : [],
+    "hasHiDPIVersion" : true,
+    "id" : "Photos",
+    "properties" : {
+      "backgroundLayerVisible" : true,
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [
+        "Menu"
+      ],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Photos.html",
+      "images" : [],
+      "stylesheets" : [
+        "css/Photos.css"
+      ]
+    },
+    "type" : "iAP.ViewController"
+  },
+  {
+    "actionLists" : [],
+    "hasHiDPIVersion" : true,
+    "id" : "Videos",
+    "properties" : {
+      "backgroundLayerVisible" : true,
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [
+        "Menu"
+      ],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Videos.html",
+      "images" : [],
+      "stylesheets" : [
+        "css/Videos.css"
+      ]
+    },
+    "type" : "iAP.ViewController"
+  },
+  {
+    "actionLists" : [],
+    "hasHiDPIVersion" : true,
+    "id" : "Map",
+    "properties" : {
+      "backgroundLayerVisible" : true,
+      "becomesBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT,
+      "becomesTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [
+        "Menu"
+      ],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : iAd.View.TRANSITION_DISSOLVE_IN,
+      "wasTopItemTransition" : iAd.View.TRANSITION_DISSOLVE_OUT
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Map.html",
+      "images" : [],
+      "stylesheets" : [
+        "css/Map.css"
+      ]
+    },
+    "type" : "iAP.ViewController"
+  },
+  {
+    "actionLists" : [],
+    "hasHiDPIVersion" : true,
+    "id" : "Menu",
+    "properties" : {
+      "becomesBackItemTransition" : null,
+      "becomesTopItemTransition" : null,
+      "bottomAnchoredSharedViewIDs" : [],
+      "buildInActionListShouldDelayTransition" : true,
+      "buildInActionListShouldOccurAfterTransition" : true,
+      "buildOutActionListShouldDelayTransition" : true,
+      "orientation" : 4,
+      "topAnchoredSharedViewIDs" : [],
+      "transitionDuration" : "0.5",
+      "wasBackItemTransition" : null,
+      "wasTopItemTransition" : null
+    },
+    "requiredFileURIs" : {
+      "contentView" : "views/Menu.html",
+      "images" : [],
+      "stylesheets" : [
+        "css/Menu.css"
+      ]
+    },
+    "type" : "iAP.ViewController"
+  }
+]
+</script>
+
+<script>iAd.Analytics.logsToConsole = true;</script>
+</head>
+<!-- The hosting element for the root view controller. -->
+<body class="root iap-iAdProject" id="root">
+    <div id="Background" class="Background iap-view-controller ad-view">
+<div ad-auto-sized="false" ad-image="assets/chrome.png" ad-image-size="100% 100%" ad-image-position="left top" ad-image-repeat="no-repeat" ad-outlet="chrome" ad-asset-droppable="true" ad-has-hidpi-version="true" ad-clips-to-bounds="true" class="ad-image-view" id="Background-image"></div><div ad-auto-sized="false" ad-image="assets/chrome.png" ad-image-size="100% 100%" ad-image-position="left top" ad-image-repeat="no-repeat" ad-outlet="chrome2" ad-asset-droppable="true" ad-has-hidpi-version="true" ad-clips-to-bounds="true" class="ad-image-view" id="Background-image-1"></div>
+</div>
+</body>
+</html>

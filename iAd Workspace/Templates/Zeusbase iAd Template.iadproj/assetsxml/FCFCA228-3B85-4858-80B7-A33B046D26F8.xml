@@ -1,0 +1,30 @@
+<asset internalID="FCFCA228-3B85-4858-80B7-A33B046D26F8">
+<fileStorageType>0</fileStorageType>
+<fileType>4</fileType>
+<nameForDisplay>Icon.png</nameForDisplay>
+<alwaysExport>1</alwaysExport>
+<assetFolderID>71B88520-1F11-4565-953F-E4F98C76D48F</assetFolderID>
+<attributes>
+    <dictionary/>
+</attributes>
+<renditions>
+    <rendition>
+        <scaleFactor>1</scaleFactor>
+        <bandwidth>0</bandwidth>
+        <internalFilename>Icon.png</internalFilename>
+        <fileType>4</fileType>
+        <fileNameIsExplicit>0</fileNameIsExplicit>
+        <isGenerated>1</isGenerated>
+        <renditionKey>scale 1.000000</renditionKey>
+    </rendition>
+    <rendition>
+        <scaleFactor>2</scaleFactor>
+        <bandwidth>0</bandwidth>
+        <internalFilename>Icon@2x.png</internalFilename>
+        <fileType>4</fileType>
+        <fileNameIsExplicit>0</fileNameIsExplicit>
+        <isGenerated>0</isGenerated>
+        <renditionKey>scale 2.000000</renditionKey>
+    </rendition>
+</renditions>
+</asset>

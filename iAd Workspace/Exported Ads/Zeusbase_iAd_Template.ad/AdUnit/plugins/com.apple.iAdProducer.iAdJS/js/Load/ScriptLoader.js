@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Class({name:"iAd.ScriptLoader",superclass:iAd.Loader});iAd.ScriptLoader.DEFAULT_TIMEOUT=0;iAd.ScriptLoader.prototype.startLoad=function(){var b=this._element=document.createElement("script");b.type="text/javascript";b.src=this._url;var a=iAd.ScriptLoader.elementForScript(b.src);if(a){this._element=a;this.notifyLoaderDidComplete();return}this.addElementListeners();document.head.appendChild(b)};iAd.ScriptLoader.prototype.abortLoad=function(){if(this._element){this.removeElementListeners();document.head.removeChild(this._element)}};iAd.ScriptLoader.prototype.getSupportingObject=function(){return this._element};iAd.ScriptLoader.prototype.getResolvedURL=function(){return this._element?this._element.src:this.callSuper()};iAd.ScriptLoader.prototype.addElementListeners=function(){if(this._element){this._element.addEventListener("load",this,false);this._element.addEventListener("error",this,false)}};iAd.ScriptLoader.prototype.removeElementListeners=function(){if(this._element){this._element.removeEventListener("load",this,false);this._element.removeEventListener("error",this,false)}};iAd.ScriptLoader.prototype.handleEvent=function(a){this.removeElementListeners();if(a.type=="load"){this.notifyLoaderDidComplete()}else{if(a.type=="error"){this.notifyLoaderDidFail(iAd.Loader.LOAD_ERROR)}}};iAd.ScriptLoader.elementForScript=function(c){var b,a=document.scripts;for(var d=0,e=a.length;d<e;d++){b=a[d];if(b.href==c){return b}}return null};

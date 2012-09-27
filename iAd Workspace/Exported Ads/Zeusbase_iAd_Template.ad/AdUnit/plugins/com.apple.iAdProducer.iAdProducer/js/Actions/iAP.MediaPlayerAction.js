@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.Class({name:"iAP.MediaPlayerAction",superclass:iAd.ScriptAction,synthesizedProperties:["targetViewId","methodName"]});iAP.MediaPlayerAction.PLAY="play";iAP.MediaPlayerAction.PAUSE="pause";iAP.MediaPlayerAction.TOGGLE="togglePlayback";iAP.MediaPlayerAction.prototype.start=function(){if(this.methodName){var a=this.targetView;if(!a.media||this.methodName==iAP.MediaPlayerAction.PAUSE&&!a.isPlaying()){this.end();return}this.addEventListeners();a.callMethodNameAfterDelay(this.methodName,0)}};iAP.MediaPlayerAction.prototype.end=function(){this.callSuper();this.removeEventListeners()};iAP.MediaPlayerAction.prototype.reset=function(){var a=this.targetView;if(a.media){a.stop()}};iAP.MediaPlayerAction.prototype.summaryText=function(){switch(this.methodName){case iAP.MediaPlayerAction.PLAY:return"Play";case iAP.MediaPlayerAction.PAUSE:return"Pause";case iAP.MediaPlayerAction.TOGGLE:return"Toggle";default:return"Media"}};iAP.MediaPlayerAction.prototype.addEventListeners=function(){var a=this.targetView;a.addEventListener(iAd.MediaPlayer.PLAYBACK_DID_PAUSE,this,false);a.addEventListener(iAd.MediaPlayer.PLAYBACK_DID_END,this,false)};iAP.MediaPlayerAction.prototype.removeEventListeners=function(){var a=this.targetView;a.removeEventListener(iAd.MediaPlayer.PLAYBACK_DID_PAUSE,this,false);a.removeEventListener(iAd.MediaPlayer.PLAYBACK_DID_END,this,false)};iAP.MediaPlayerAction.prototype.handleEvent=function(b){var c=this.targetView;if(b.ad.sender!=c){return}var a=b.type;if(a==iAd.MediaPlayer.PLAYBACK_DID_PAUSE||a==iAd.MediaPlayer.PLAYBACK_DID_END){this.end()}};

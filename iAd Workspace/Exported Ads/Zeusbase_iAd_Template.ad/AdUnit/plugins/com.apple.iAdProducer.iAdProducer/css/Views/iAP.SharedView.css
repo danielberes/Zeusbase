@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+.iap-shared-view{pointer-events:none}.iap-shared-view .iap-shared-content-view>*{pointer-events:auto}

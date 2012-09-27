@@ -1,0 +1,764 @@
+<page internalID="DDF3E757-D61F-49A9-B417-2E04C5249DC9">
+<name>Videos</name>
+<pageRole>2</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.ViewController</pageClassName>
+<properties>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">cover</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>370479007.86</date>
+</lastModifiedDate>
+<components>
+    <component internalID="C5420C73-DA47-4593-B858-7273799E35CE">
+        <componentClassName>iAP.SharedView</componentClassName>
+        <outlet>iap-background-layer</outlet>
+        <outletNameFromTemplate>sharedView</outletNameFromTemplate>
+        <templateName>Shared Layer</templateName>
+        <properties>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-iap-shared-layer-position">
+                <integer>2</integer>
+            </property>
+            <property name="ad-clips-to-bounds">false</property>
+            <property name="ad-outlet">iap-background-layer</property>
+            <property name="ad-repositions-subviews">false</property>
+            <property name="ad-view-controller-id">
+                <reference representedObjectID="9CEAED3F-2981-474F-824B-3285724EE07D" representedObjectClassName="STPage"/>
+            </property>
+            <property name="height">100%</property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>0.0</real>
+            </property>
+            <property name="width">100%</property>
+        </properties>
+    </component>
+    <component internalID="93CE4C7D-8BE0-4F21-8566-D1AFEDB6EFEC">
+        <componentClassName>iAd.FlowView</componentClassName>
+        <outlet>videosFlowView</outlet>
+        <outletNameFromTemplate>flowView</outletNameFromTemplate>
+        <templateName>Cover Flow</templateName>
+        <properties>
+            <property name="-iap-original-size">{280, 190}</property>
+            <property name="ad-cell-gap">200px</property>
+            <property name="ad-cell-rotation">80</property>
+            <property name="ad-focused-index">3</property>
+            <property name="ad-focused-z-offset">0</property>
+            <property name="ad-outlet">videosFlowView</property>
+            <property name="ad-priority-ordering">false</property>
+            <property name="ad-side-padding">200px</property>
+            <property name="ad-side-z-offset">-300</property>
+            <property name="height">540px</property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">80px</property>
+            <property name="width">
+                <real>1024.0</real>
+            </property>
+        </properties>
+        <children>
+            <component internalID="D15BDBAA-F959-43FB-BBBE-827E2016BCA6">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell1</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell1</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="46F4D0EA-4DAD-467E-8116-8898CCDEFC5E">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video1</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video1</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>2E573615-84C1-4C1C-8069-9340C1245198</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+            <component internalID="16051F25-3274-445C-87DE-3B6C157D5A2E">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell2</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell2</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="D61EC324-B791-461E-BEB6-AA7DDE97A9E0">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video2</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video2</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>1ACB22C0-D790-4B17-A4BA-DB35DA4BC434</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+            <component internalID="33FC67A2-E8F6-44AA-83B5-679AD7793C03">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell3</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell3</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="12A7FA77-7608-4416-B897-957484260F34">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video3</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video3</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>F6E05C73-41E4-4A27-A9BB-959ABCA163B2</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+            <component internalID="BB34865C-FC1A-49BF-ADB8-69121D6CFCCA">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell4</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell4</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="0067C2C6-DFFD-4E4B-88BC-42EEF2760287">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video4</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video4</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>B5856F82-5FF1-4C1B-8D3C-D50875F8BA0F</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+            <component internalID="6CC976E7-F0F4-4135-B8D0-E82D83AC9E4C">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell5</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell5</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="4F92EB8D-4FCE-428A-BC4C-8F5CCF772E56">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video5</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video5</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>EF968CD9-DC37-474E-B737-304ED0CBB1A4</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+            <component internalID="80A2ABCC-EC49-40F6-AEBF-262D68C929D3">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell6</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell6</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="03D7354F-EA1D-4D01-AA82-206CA70A6F4D">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video6</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video6</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>624DAD4A-F3D8-4365-9142-605B8B1C85FC</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+            <component internalID="3A686202-B26E-4787-8CBE-D922A6A0C676">
+                <componentClassName>iAP.Cell</componentClassName>
+                <outlet>cell7</outlet>
+                <outletNameFromTemplate>cell</outletNameFromTemplate>
+                <templateName>Cell</templateName>
+                <properties>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-iap-reflection-offset">1px</property>
+                    <property name="-iap-reflection-size">0.12</property>
+                    <property name="-iap-reflection-strength">50%</property>
+                    <property name="-webkit-box-reflect">below 1px -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(255, 255, 255, 0.5)), color-stop(88%, rgba(0, 0, 0, 0)))</property>
+                    <property name="ad-outlet">cell7</property>
+                    <property name="background-position">left top</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">auto auto</property>
+                    <property name="height">100%</property>
+                    <property name="width">100%</property>
+                </properties>
+                <children>
+                    <component internalID="06E10BA0-3DE3-44AA-BED1-F7CADA5E117B">
+                        <componentClassName>iAd.VideoPlayer</componentClassName>
+                        <outlet>video7</outlet>
+                        <outletNameFromTemplate>video</outletNameFromTemplate>
+                        <templateName>Video</templateName>
+                        <properties>
+                            <property name="-iap-original-size">{200, 160}</property>
+                            <property name="ad-asset-droppable">true</property>
+                            <property name="ad-has-hidpi-version">true</property>
+                            <property name="ad-outlet">video7</property>
+                            <property name="ad-plays-inline">false</property>
+                            <property name="height">100%</property>
+                            <property name="left">0px</property>
+                            <property name="top">0px</property>
+                            <property name="width">100%</property>
+                        </properties>
+                        <properties state="ad-landscape">
+                            <property name="height">160</property>
+                            <property name="width">200</property>
+                        </properties>
+                        <actionSequencesByEvent>
+                            <dictionary>
+                                <key name="viewActivate">
+                                    <actionSequenceReference>B3E48AEC-9560-4DD0-A1D6-F8A4210C296A</actionSequenceReference>
+                                </key>
+                            </dictionary>
+                        </actionSequencesByEvent>
+                    </component>
+                </children>
+            </component>
+        </children>
+    </component>
+    <component internalID="28AABF2D-466A-4F2E-95E3-340EEF5D437B">
+        <componentClassName>iAd.Label</componentClassName>
+        <outlet>videosLabel</outlet>
+        <outletNameFromTemplate>title</outletNameFromTemplate>
+        <properties>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-number-of-lines">0</property>
+            <property name="ad-outlet">videosLabel</property>
+            <property name="ad-text">Videos
+</property>
+            <property name="color">rgba(0, 0, 0, 0.7)</property>
+            <property name="font-family">
+                <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+            </property>
+            <property name="font-size">28px</property>
+            <property name="height">
+                <real>38.0</real>
+            </property>
+            <property name="left">
+                <real>352.0</real>
+            </property>
+            <property name="text-align">center</property>
+            <property name="top">20px</property>
+            <property name="width">
+                <real>320.0</real>
+            </property>
+        </properties>
+        <style>
+            <stylereference>39B4EB7E-F5BC-4183-9620-A44095875B24</stylereference>
+        </style>
+    </component>
+    <component internalID="D5A30953-4EFA-49CF-B269-D42E9B3A1B87">
+        <componentClassName>iAP.SharedView</componentClassName>
+        <outlet>menuSharedLayer</outlet>
+        <outletNameFromTemplate>sharedView</outletNameFromTemplate>
+        <templateName>Shared Layer</templateName>
+        <properties>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-iap-shared-layer-position">
+                <integer>1</integer>
+            </property>
+            <property name="ad-clips-to-bounds">false</property>
+            <property name="ad-outlet">menuSharedLayer</property>
+            <property name="ad-repositions-subviews">
+                <true/>
+            </property>
+            <property name="ad-view-controller-id">
+                <reference representedObjectID="F9BA01F4-D054-43EF-B623-05B773C35457" representedObjectClassName="STPage"/>
+            </property>
+            <property name="height">
+                <real>69.0</real>
+            </property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>699.0</real>
+            </property>
+            <property name="width">
+                <real>1024.0</real>
+            </property>
+        </properties>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="ACE9EF0F-7086-4456-A2EC-64F9A45DB6D8">
+        <name>Page Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="9EB37A10-09C4-42BF-AEDF-FB2DBDD2AC72">
+        <name>Page Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="B3E48AEC-9560-4DD0-A1D6-F8A4210C296A">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="B5E153B2-DCFA-4766-B97F-A4A193FCB227">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback6</name>
+                                        <componentID>06E10BA0-3DE3-44AA-BED1-F7CADA5E117B</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="624DAD4A-F3D8-4365-9142-605B8B1C85FC">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="B38EE823-F242-431F-B846-FD84EA6F6E6E">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback5</name>
+                                        <componentID>03D7354F-EA1D-4D01-AA82-206CA70A6F4D</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="EF968CD9-DC37-474E-B737-304ED0CBB1A4">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="3E215DF6-A4D3-4890-95CA-83C4D0BFDF71">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback4</name>
+                                        <componentID>4F92EB8D-4FCE-428A-BC4C-8F5CCF772E56</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="B5856F82-5FF1-4C1B-8D3C-D50875F8BA0F">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="FF7BB616-D25B-438A-AB5E-850216D1B261">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback3</name>
+                                        <componentID>0067C2C6-DFFD-4E4B-88BC-42EEF2760287</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="F6E05C73-41E4-4A27-A9BB-959ABCA163B2">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="6623B85F-8DAA-4015-A086-D8BCBC6B57EC">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback2</name>
+                                        <componentID>12A7FA77-7608-4416-B897-957484260F34</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="1ACB22C0-D790-4B17-A4BA-DB35DA4BC434">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="95C76B08-6F8B-4754-8260-E3F80EF0EAFB">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback1</name>
+                                        <componentID>D61EC324-B791-461E-BEB6-AA7DDE97A9E0</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="2E573615-84C1-4C1C-8069-9340C1245198">
+        <name>Toggle Video Playback</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="9234A554-E5D2-42FC-AD02-C25FA4B7451A">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="70DB3432-8DC2-4245-BAF7-B69C482AE731">
+                                        <actionClassName>iAP.VideoPlayerAction</actionClassName>
+                                        <actionTemplateName>Toggle Video Playback</actionTemplateName>
+                                        <name>ToggleVideoPlayback</name>
+                                        <componentID>46F4D0EA-4DAD-467E-8116-8898CCDEFC5E</componentID>
+                                        <properties>
+                                            <property name="asynchronous">false</property>
+                                            <property name="methodName">togglePlayback</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>ACE9EF0F-7086-4456-A2EC-64F9A45DB6D8</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>9EB37A10-09C4-42BF-AEDF-FB2DBDD2AC72</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>6</listIndex>
+</page>

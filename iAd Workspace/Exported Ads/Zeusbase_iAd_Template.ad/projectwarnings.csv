@@ -1,0 +1,6 @@
+page, component, asset, error_level, message, category
+,,"chrome.png",WARN,"No standard-resolution rendition of the image asset named ""chrome.png"" was provided; the high-resolution rendition of this asset will be scaled down for standard-resolution displays.","File Exceeds Limit"
+,,"chrome@2x.png",WARN,"The maximum file size for image assets is 350 KB, and the high-resolution rendition of the asset named ""chrome.png"" is 467 KB.","File Exceeds Limit"
+,,"03 Ready Or Not.m4p",FATAL,"The asset named ""03 Ready Or Not.m4p"" has the "".m4p"" file extension, which is an unsupported format; audio files should be in the AAC format and use the "".m4a"" extension, or "".m4r"" for ringtones.","Invalid File"
+,,"03 Ready Or Not.m4p",WARN,"The maximum length allowed for audio assets is 60 seconds; the asset ""03 Ready Or Not.m4p"" is 227 seconds long.","File Exceeds Limit"
+,,"Icon.png",WARN,"The standard- and high-resolution renditions of the asset named ""Icon.png"" have incompatible dimensions. The high-resolution rendition should be exactly twice as large as the standard-resolution one.","Invalid Component"
