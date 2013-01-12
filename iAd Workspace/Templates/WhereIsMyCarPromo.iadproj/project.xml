@@ -1,0 +1,11 @@
+<project>
+<iAPVersion>2263</iAPVersion>
+<targetDevice>generic-iPad</targetDevice>
+<projectClassName>iAP.iAdProject</projectClassName>
+<initialPage>89C4DCC1-177F-4053-A2DD-E77437F85C56</initialPage>
+<uniqueID>EE53D2A8-F7EE-41BC-B06D-1DA06E5462BF</uniqueID>
+<bannerBackgroundColor>#a4b3c1</bannerBackgroundColor>
+<minimumiOSVersion>5.0</minimumiOSVersion>
+<minimumMinimumiOSVersion>5.0</minimumMinimumiOSVersion>
+<sections/>
+</project>

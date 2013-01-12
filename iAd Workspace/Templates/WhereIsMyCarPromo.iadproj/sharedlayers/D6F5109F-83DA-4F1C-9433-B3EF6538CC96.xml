@@ -1,0 +1,433 @@
+<page internalID="D6F5109F-83DA-4F1C-9433-B3EF6538CC96">
+<name>Menu</name>
+<pageRole>9</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.ViewController</pageClassName>
+<properties>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">cover</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">None</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>378196097.605</date>
+</lastModifiedDate>
+<components>
+    <component internalID="C9B38981-9206-40C5-8D2C-35FBC9431D27">
+        <componentClassName>iAd.View</componentClassName>
+        <outlet>menuView</outlet>
+        <outletNameFromTemplate>view</outletNameFromTemplate>
+        <templateName>View</templateName>
+        <properties>
+            <property name="-iap-background-inspector-index">
+                <integer>3</integer>
+            </property>
+            <property name="-iap-box-shadow-distance--webkit-box-shadow">
+                <real>0.0</real>
+            </property>
+            <property name="-iap-inspector-saved-values">
+                <dictionary>
+                    <key name="-webkit-box-shadow">0px 0px 7px rgba(0, 0, 0, 0.66)</key>
+                </dictionary>
+            </property>
+            <property name="-iap-original-size">{280, 280}</property>
+            <property name="-webkit-border-radius">0px</property>
+            <property name="-webkit-box-shadow">none</property>
+            <property name="-webkit-box-sizing">border-box</property>
+            <property name="ad-outlet">menuView</property>
+            <property name="background">-webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #666666))</property>
+            <property name="background-repeat-x">no-repeat</property>
+            <property name="background-repeat-y">no-repeat</property>
+            <property name="background-size">100% 100%</property>
+            <property name="border-color">#838588</property>
+            <property name="border-style">solid</property>
+            <property name="border-width">1px</property>
+            <property name="height">
+                <real>69.0</real>
+            </property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>699.0</real>
+            </property>
+            <property name="width">
+                <real>1024.0</real>
+            </property>
+        </properties>
+        <properties state="ad-landscape">
+            <property name="height">280</property>
+            <property name="width">280</property>
+        </properties>
+        <children>
+            <component internalID="5B635563-4C25-4A8D-9927-CD1BE4A0274D">
+                <componentClassName>iAd.Button</componentClassName>
+                <outlet>mapButton</outlet>
+                <outletNameFromTemplate>button</outletNameFromTemplate>
+                <templateName>Menu Button</templateName>
+                <properties>
+                    <property name="-iap-background-inspector-index">0</property>
+                    <property name="-iap-inspector-saved-values">
+                        <dictionary>
+                            <key name="-webkit-border-radius">8px</key>
+                            <key name="border-color">rgba(0, 0, 0, 0.4)</key>
+                            <key name="border-style">solid</key>
+                            <key name="border-width">1px</key>
+                        </dictionary>
+                    </property>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-webkit-border-radius">0px</property>
+                    <property name="-webkit-text-stroke-color">rgb(0, 0, 0)</property>
+                    <property name="ad-edited">true</property>
+                    <property name="ad-navigates-to">Page1</property>
+                    <property name="ad-outlet">mapButton</property>
+                    <property name="ad-title">Map </property>
+                    <property name="ad-transitions-to-id">DAC67A9B-BC80-4DA1-871F-406AEDF23185</property>
+                    <property name="ad-type">ad-custom-type</property>
+                    <property name="background">none</property>
+                    <property name="background-color">none</property>
+                    <property name="background-image">none</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="border-color">rgba(0, 0, 0, 0.4)</property>
+                    <property name="border-style">none</property>
+                    <property name="color">#000000</property>
+                    <property name="font-family">
+                        <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+                    </property>
+                    <property name="font-size">30px</property>
+                    <property name="height">
+                        <real>68.0</real>
+                    </property>
+                    <property name="left">
+                        <real>631.0</real>
+                    </property>
+                    <property name="opacity">1</property>
+                    <property name="padding-bottom">0</property>
+                    <property name="padding-left">5</property>
+                    <property name="padding-right">5</property>
+                    <property name="padding-top">0</property>
+                    <property name="text-align">center</property>
+                    <property name="text-shadow">0px 2px 4px #ffffff</property>
+                    <property name="top">
+                        <real>0.0</real>
+                    </property>
+                    <property name="visibility">visible</property>
+                    <property name="width">240px</property>
+                </properties>
+                <properties state="ad-disabled">
+                    <property name="opacity">0.5</property>
+                </properties>
+                <properties state="ad-highlighted">
+                    <property name="-iap-background-inspector-index">0</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">100% 100%</property>
+                    <property name="color">#000000</property>
+                </properties>
+                <actionSequencesByEvent>
+                    <dictionary>
+                        <key name="viewActivate">
+                            <actionSequenceReference>779C0B92-3E21-4DB4-8B85-1B5D215D5FF5</actionSequenceReference>
+                        </key>
+                    </dictionary>
+                </actionSequencesByEvent>
+            </component>
+            <component internalID="5D9F7D58-B766-4171-A616-D03D911E46BC">
+                <componentClassName>iAd.Button</componentClassName>
+                <outlet>videosButton</outlet>
+                <outletNameFromTemplate>button</outletNameFromTemplate>
+                <templateName>Menu Button</templateName>
+                <properties>
+                    <property name="-iap-background-inspector-index">0</property>
+                    <property name="-iap-inspector-saved-values">
+                        <dictionary>
+                            <key name="-webkit-border-radius">8px</key>
+                            <key name="border-color">rgba(0, 0, 0, 0.4)</key>
+                            <key name="border-style">solid</key>
+                            <key name="border-width">1px</key>
+                        </dictionary>
+                    </property>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-webkit-border-radius">0px</property>
+                    <property name="-webkit-text-stroke-color">rgb(0, 0, 0)</property>
+                    <property name="ad-edited">true</property>
+                    <property name="ad-navigates-to">Page1</property>
+                    <property name="ad-outlet">videosButton</property>
+                    <property name="ad-title">Videos 
+</property>
+                    <property name="ad-transitions-to-id">DAC67A9B-BC80-4DA1-871F-406AEDF23185</property>
+                    <property name="ad-type">ad-custom-type</property>
+                    <property name="background">none</property>
+                    <property name="background-color">none</property>
+                    <property name="background-image">none</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="border-color">rgba(0, 0, 0, 0.4)</property>
+                    <property name="border-style">none</property>
+                    <property name="color">#000000</property>
+                    <property name="font-family">
+                        <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+                    </property>
+                    <property name="font-size">30px</property>
+                    <property name="height">
+                        <real>68.0</real>
+                    </property>
+                    <property name="left">
+                        <real>391.0</real>
+                    </property>
+                    <property name="opacity">1</property>
+                    <property name="padding-bottom">0</property>
+                    <property name="padding-left">5</property>
+                    <property name="padding-right">5</property>
+                    <property name="padding-top">0</property>
+                    <property name="text-align">center</property>
+                    <property name="text-shadow">0px 2px 4px #ffffff</property>
+                    <property name="top">
+                        <real>0.0</real>
+                    </property>
+                    <property name="visibility">visible</property>
+                    <property name="width">240px</property>
+                </properties>
+                <properties state="ad-disabled">
+                    <property name="opacity">0.5</property>
+                </properties>
+                <properties state="ad-highlighted">
+                    <property name="-iap-background-inspector-index">0</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">100% 100%</property>
+                    <property name="color">#000000</property>
+                </properties>
+                <actionSequencesByEvent>
+                    <dictionary>
+                        <key name="viewActivate">
+                            <actionSequenceReference>B6BEBB99-BC91-42D5-9B95-949F3F024085</actionSequenceReference>
+                        </key>
+                    </dictionary>
+                </actionSequencesByEvent>
+            </component>
+            <component internalID="645715A1-7F9B-4CB0-9C17-2370C4BBCBD5">
+                <componentClassName>iAd.Button</componentClassName>
+                <outlet>photosButton</outlet>
+                <outletNameFromTemplate>button</outletNameFromTemplate>
+                <templateName>Menu Button</templateName>
+                <properties>
+                    <property name="-iap-background-inspector-index">0</property>
+                    <property name="-iap-original-size">{0, 0}</property>
+                    <property name="-webkit-border-radius">0px</property>
+                    <property name="ad-edited">true</property>
+                    <property name="ad-navigates-to">Page1</property>
+                    <property name="ad-outlet">photosButton</property>
+                    <property name="ad-title">Photos
+</property>
+                    <property name="ad-transitions-to-id">DAC67A9B-BC80-4DA1-871F-406AEDF23185</property>
+                    <property name="ad-type">ad-custom-type</property>
+                    <property name="background">none</property>
+                    <property name="background-color">none</property>
+                    <property name="background-image">none</property>
+                    <property name="background-repeat">no-repeat</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="border-color">rgba(0, 0, 0, 0.4)</property>
+                    <property name="border-style">none</property>
+                    <property name="color">#000000</property>
+                    <property name="font-family">
+                        <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+                    </property>
+                    <property name="font-size">30px</property>
+                    <property name="height">
+                        <real>68.0</real>
+                    </property>
+                    <property name="left">
+                        <real>151.0</real>
+                    </property>
+                    <property name="opacity">1</property>
+                    <property name="padding-bottom">0</property>
+                    <property name="padding-left">5</property>
+                    <property name="padding-right">5</property>
+                    <property name="padding-top">0</property>
+                    <property name="text-align">center</property>
+                    <property name="text-shadow">0px 2px 4px #ffffff</property>
+                    <property name="top">
+                        <real>0.0</real>
+                    </property>
+                    <property name="visibility">visible</property>
+                    <property name="width">240px</property>
+                </properties>
+                <properties state="ad-disabled">
+                    <property name="opacity">0.5</property>
+                </properties>
+                <properties state="ad-highlighted">
+                    <property name="-iap-background-inspector-index">0</property>
+                    <property name="background-repeat-x">no-repeat</property>
+                    <property name="background-repeat-y">no-repeat</property>
+                    <property name="background-size">100% 100%</property>
+                    <property name="color">#000000</property>
+                </properties>
+                <actionSequencesByEvent>
+                    <dictionary>
+                        <key name="viewActivate">
+                            <actionSequenceReference>5A7084DA-00FF-4560-972D-DE0C1E55AB14</actionSequenceReference>
+                        </key>
+                    </dictionary>
+                </actionSequencesByEvent>
+            </component>
+        </children>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="AAAC9F07-CC6E-49D7-B584-2F22688FF1EB">
+        <name>Layer Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="6A460140-CDA7-4B3E-95EF-C7B14E9E71E9">
+        <name>Layer Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="5A7084DA-00FF-4560-972D-DE0C1E55AB14">
+        <name>Go to Page</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="DE656BEB-735F-4419-826E-5C7036587748">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="25435542-8F81-479B-B155-783A11835E77">
+                                        <actionClassName>iAP.TransitionToPageAction</actionClassName>
+                                        <actionTemplateName>Go to Page</actionTemplateName>
+                                        <name>GotoPage1</name>
+                                        <properties>
+                                            <property name="asynchronous">true</property>
+                                            <property name="destinationPage">
+                                                <reference representedObjectID="62051991-36DE-49AB-B49E-FA652EC94078" representedObjectClassName="STPage"/>
+                                            </property>
+                                            <property name="destinationPageName">Photos</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="B6BEBB99-BC91-42D5-9B95-949F3F024085">
+        <name>Go to Page</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="DE656BEB-735F-4419-826E-5C7036587748">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="1B116E58-3845-4D88-A7FA-5B7E699FCE27">
+                                        <actionClassName>iAP.TransitionToPageAction</actionClassName>
+                                        <actionTemplateName>Go to Page</actionTemplateName>
+                                        <name>GotoPage2</name>
+                                        <properties>
+                                            <property name="asynchronous">true</property>
+                                            <property name="destinationPage">
+                                                <reference representedObjectID="1536567B-B5BD-49CB-9B0A-9C37DA80B276" representedObjectClassName="STPage"/>
+                                            </property>
+                                            <property name="destinationPageName">Videos</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="779C0B92-3E21-4DB4-8B85-1B5D215D5FF5">
+        <name>Go to Page</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="DE656BEB-735F-4419-826E-5C7036587748">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="2F4F820D-F761-4758-A865-7104D9667C74">
+                                        <actionClassName>iAP.TransitionToPageAction</actionClassName>
+                                        <actionTemplateName>Go to Page</actionTemplateName>
+                                        <name>GotoPage3</name>
+                                        <properties>
+                                            <property name="asynchronous">true</property>
+                                            <property name="destinationPage">
+                                                <reference representedObjectID="F535E51A-3483-4A5A-93E8-A05FBD6987F9" representedObjectClassName="STPage"/>
+                                            </property>
+                                            <property name="destinationPageName">Map</property>
+                                        </properties>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>AAAC9F07-CC6E-49D7-B584-2F22688FF1EB</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>6A460140-CDA7-4B3E-95EF-C7B14E9E71E9</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>8</listIndex>
+</page>

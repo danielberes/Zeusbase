@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+*{-webkit-user-select:none;-webkit-tap-highlight-color:rgba(0,0,0,0)}input,textarea{-webkit-user-select:auto}

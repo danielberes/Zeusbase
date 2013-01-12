@@ -1,0 +1,41 @@
+<style internalID="E6E9B5F1-2006-4C7E-96A4-808C86DD52A0" originalStyleID="39B4EB7E-F5BC-4183-9620-A44095875B24">
+<name>LabelDefault (modified)</name>
+<includedAttributeKeys>
+    <key>-iap-reflection-offset</key>
+    <key>-iap-reflection-size</key>
+    <key>-iap-reflection-strength</key>
+    <key>-webkit-border-radius</key>
+    <key>-webkit-box-reflect</key>
+    <key>-webkit-box-shadow</key>
+    <key>-webkit-text-stroke-color</key>
+    <key>-webkit-text-stroke-width</key>
+    <key>ad-vertical-alignment</key>
+    <key>background</key>
+    <key>background-color</key>
+    <key>background-image</key>
+    <key>background-position</key>
+    <key>background-repeat</key>
+    <key>background-size</key>
+    <key>border</key>
+    <key>border-color</key>
+    <key>border-style</key>
+    <key>border-width</key>
+    <key>color</key>
+    <key>font-family</key>
+    <key>font-size</key>
+    <key>letter-spacing</key>
+    <key>line-height</key>
+    <key>opacity</key>
+    <key>text-align</key>
+    <key>text-shadow</key>
+</includedAttributeKeys>
+<properties>
+    <property name="color">#ffffff</property>
+    <property name="font-family">
+        <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue-Bold"/>
+    </property>
+    <property name="font-size">28px</property>
+    <property name="text-align">center</property>
+    <property name="text-shadow">0px 2px 4px #000000</property>
+</properties>
+</style>

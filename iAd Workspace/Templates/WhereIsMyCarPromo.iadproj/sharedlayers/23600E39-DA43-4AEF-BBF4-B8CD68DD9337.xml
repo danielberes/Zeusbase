@@ -1,0 +1,69 @@
+<page internalID="23600E39-DA43-4AEF-BBF4-B8CD68DD9337">
+<name>Background</name>
+<pageRole>10</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.ViewController</pageClassName>
+<properties>
+    <property name="-iap-background-inspector-index">
+        <integer>3</integer>
+    </property>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background">-webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #004080))</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">100% 100%</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>378195593.282</date>
+</lastModifiedDate>
+<actionSequences>
+    <actionSequence internalID="AA850C95-CCDF-4136-89A2-05F0BAADFA26">
+        <name>Layer Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="C63ECFF6-D086-4940-A09F-9BE1A5AD88E5">
+        <name>Layer Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>AA850C95-CCDF-4136-89A2-05F0BAADFA26</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>C63ECFF6-D086-4940-A09F-9BE1A5AD88E5</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>2</listIndex>
+</page>

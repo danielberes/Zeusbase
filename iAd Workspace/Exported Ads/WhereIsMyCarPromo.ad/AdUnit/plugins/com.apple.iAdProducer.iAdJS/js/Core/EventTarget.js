@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+iAd.EventTarget={};iAd.EventTarget.addEventListener=function(b,c,a){if(!this.eventTarget){iAd.Console.warn("iAd.EventTarget.addEventListener: cannot add event listener since no eventTarget was specified by the mixing object.");return}iAd.Event.registerForNotificationEvent(b);this.eventTarget.addEventListener(b,c,a)};iAd.EventTarget.removeEventListener=function(b,c,a){if(!this.eventTarget){iAd.Console.warn("iAd.EventTarget.removeEventListener: cannot remove event listener since no eventTarget was specified by the mixing object.");return}this.eventTarget.removeEventListener(b,c,a)};iAd.EventTarget.dispatchEvent=function(a){if(!this.eventTarget){iAd.Console.warn("iAd.EventTarget.dispatchEvent: cannot dispatch event since no eventTarget was specified by the mixing object.");return}this.eventTarget.dispatchEvent(a)};iAd.EventTarget.dispatchNotification=function(b,a,c){this.notifyDelegate(b,a,c);this.createAndDispatchEvent(b,c)};iAd.EventTarget.notifyDelegate=function(c,b,d){if(iAd.Utils.objectHasMethod(b,c)){var a=[this];if(d){a=a.concat(d.map(function(e){return e[1]}))}b[c].apply(b,a)}};iAd.EventTarget.createEvent=function(b,e){var d=document.createEvent("Event");d.initEvent(b,true,false);if(!d.ad){d.ad={}}d.ad.sender=this;if(e){for(var a=0,c=e.length;a<c;a++){d.ad[e[a][0]]=e[a][1]}}return d};iAd.EventTarget.createAndDispatchEvent=function(a,b){if(iAd.Event.notificationEvents[a]){this.dispatchEvent(this.createEvent(a,b))}};iAd.Utils.setupDisplayNames(iAd.EventTarget,"iAd.EventTarget");

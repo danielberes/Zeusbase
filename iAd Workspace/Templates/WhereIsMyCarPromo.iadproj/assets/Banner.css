@@ -1,0 +1,13 @@
+/*
+ * Put globally accessible CSS for banners in this file.
+ *
+ * Referencing views by class name:
+ *   .customClass {
+ *
+ *   }
+ *
+ * Referencing views by outlet name:
+ *   #PageName [ad-outlet="outletName"] { 
+ *
+ *   }
+ */

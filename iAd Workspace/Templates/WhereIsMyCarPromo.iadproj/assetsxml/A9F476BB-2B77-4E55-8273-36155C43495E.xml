@@ -1,0 +1,30 @@
+<asset internalID="A9F476BB-2B77-4E55-8273-36155C43495E">
+<fileStorageType>0</fileStorageType>
+<fileType>4</fileType>
+<nameForDisplay>IMG_0260.JPG</nameForDisplay>
+<alwaysExport>1</alwaysExport>
+<assetFolderID>71B88520-1F11-4565-953F-E4F98C76D48F</assetFolderID>
+<attributes>
+    <dictionary/>
+</attributes>
+<renditions>
+    <rendition>
+        <scaleFactor>1</scaleFactor>
+        <bandwidth>0</bandwidth>
+        <internalFilename>IMG_0260.JPG</internalFilename>
+        <fileType>4</fileType>
+        <fileNameIsExplicit>0</fileNameIsExplicit>
+        <isGenerated>1</isGenerated>
+        <renditionKey>scale 1.000000</renditionKey>
+    </rendition>
+    <rendition>
+        <scaleFactor>2</scaleFactor>
+        <bandwidth>0</bandwidth>
+        <internalFilename>IMG_0260@2x.JPG</internalFilename>
+        <fileType>4</fileType>
+        <fileNameIsExplicit>0</fileNameIsExplicit>
+        <isGenerated>0</isGenerated>
+        <renditionKey>scale 2.000000</renditionKey>
+    </rendition>
+</renditions>
+</asset>

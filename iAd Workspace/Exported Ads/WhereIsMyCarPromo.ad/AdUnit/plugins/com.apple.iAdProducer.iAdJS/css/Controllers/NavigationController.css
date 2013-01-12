@@ -1,0 +1,8 @@
+
+/**
+*
+* Copyright © 2009-2011 Apple Inc.  All rights reserved.
+*
+**/
+
+.ad-navigation-controller-view{-webkit-user-select:none}.ad-navigation-controller-view>.ad-navigation-bar,.ad-navigation-controller-view>.ad-toolbar{z-index:1}.ad-navigation-controller-host-view{-webkit-user-select:auto}

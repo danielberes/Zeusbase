@@ -1,0 +1,30 @@
+<asset internalID="CDF9BD1B-A726-4DB9-8739-DE4774FF8366">
+<fileStorageType>0</fileStorageType>
+<fileType>4</fileType>
+<nameForDisplay>ic_google_play_512x512.png</nameForDisplay>
+<alwaysExport>1</alwaysExport>
+<assetFolderID>71B88520-1F11-4565-953F-E4F98C76D48F</assetFolderID>
+<attributes>
+    <dictionary/>
+</attributes>
+<renditions>
+    <rendition>
+        <scaleFactor>1</scaleFactor>
+        <bandwidth>0</bandwidth>
+        <internalFilename>ic_google_play_512x512.png</internalFilename>
+        <fileType>4</fileType>
+        <fileNameIsExplicit>0</fileNameIsExplicit>
+        <isGenerated>1</isGenerated>
+        <renditionKey>scale 1.000000</renditionKey>
+    </rendition>
+    <rendition>
+        <scaleFactor>2</scaleFactor>
+        <bandwidth>0</bandwidth>
+        <internalFilename>ic_google_play_512x512@2x.png</internalFilename>
+        <fileType>4</fileType>
+        <fileNameIsExplicit>0</fileNameIsExplicit>
+        <isGenerated>0</isGenerated>
+        <renditionKey>scale 2.000000</renditionKey>
+    </rendition>
+</renditions>
+</asset>

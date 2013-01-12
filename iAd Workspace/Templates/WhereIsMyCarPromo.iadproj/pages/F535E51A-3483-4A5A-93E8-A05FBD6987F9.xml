@@ -1,0 +1,250 @@
+<page internalID="F535E51A-3483-4A5A-93E8-A05FBD6987F9">
+<name>Map</name>
+<pageRole>2</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.ViewController</pageClassName>
+<preloadSettings>YnBsaXN0MDDUAQIDBAUGISJYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoKcHCBESGBkaVSRudWxs0wkKCwwOEFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzoQ2AAqEPgAOABl8QJDE5QTNEQTY2LTA2MDUtNDEwMC1BM0E5LUQ2QzNFQTc4N0MzRtMJCgsTFRChFIAEoRaABYAGXmRlZmF1bHRTZXR0aW5nCdIbHB0eWiRjbGFzc25hbWVYJGNsYXNzZXNfEBNOU011dGFibGVEaWN0aW9uYXJ5ox0fIFxOU0RpY3Rpb25hcnlYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLRIyRUcm9vdIABAAgAEQAaACMALQAyADcAPwBFAEwAVABfAGYAaABqAGwAbgBwAJcAngCgAKIApACmAKgAtwC4AL0AyADRAOcA6wD4AQEBEwEWARsAAAAAAAACAQAAAAAAAAAlAAAAAAAAAAAAAAAAAAABHQ==</preloadSettings>
+<properties>
+    <property name="-iap-view-controller-class-name">iAP.ViewController</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">cover</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>378196426.555</date>
+</lastModifiedDate>
+<components>
+    <component internalID="33E4C376-8916-43AA-9C04-8DFB2FCD4013">
+        <componentClassName>iAP.SharedView</componentClassName>
+        <outlet>iap-background-layer</outlet>
+        <outletNameFromTemplate>sharedView</outletNameFromTemplate>
+        <templateName>Shared Layer</templateName>
+        <properties>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-iap-shared-layer-position">
+                <integer>2</integer>
+            </property>
+            <property name="ad-clips-to-bounds">false</property>
+            <property name="ad-outlet">iap-background-layer</property>
+            <property name="ad-repositions-subviews">false</property>
+            <property name="ad-view-controller-id">
+                <reference representedObjectID="23600E39-DA43-4AEF-BBF4-B8CD68DD9337" representedObjectClassName="STPage"/>
+            </property>
+            <property name="height">100%</property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>0.0</real>
+            </property>
+            <property name="width">100%</property>
+        </properties>
+    </component>
+    <component internalID="966672EB-EC1E-4E1D-8732-24F659B0EF19">
+        <componentClassName>iAd.Label</componentClassName>
+        <outlet>mapLabel</outlet>
+        <outletNameFromTemplate>title</outletNameFromTemplate>
+        <properties>
+            <property name="ad-clips-to-bounds">true</property>
+            <property name="ad-number-of-lines">0</property>
+            <property name="ad-outlet">mapLabel</property>
+            <property name="ad-text">Where is my Car?
+</property>
+            <property name="color">rgba(0, 0, 0, 0.7)</property>
+            <property name="font-family">
+                <fontreference imported="false" fontFamilyName="Helvetica Neue" fontID="HelveticaNeue"/>
+            </property>
+            <property name="font-size">28px</property>
+            <property name="height">
+                <real>38.0</real>
+            </property>
+            <property name="left">
+                <real>352.0</real>
+            </property>
+            <property name="text-align">center</property>
+            <property name="top">20px</property>
+            <property name="width">
+                <real>320.0</real>
+            </property>
+        </properties>
+        <style>
+            <stylereference>CCF5BD0F-1B14-4374-AF74-A5FC3173B6A6</stylereference>
+        </style>
+    </component>
+    <component internalID="49906AE1-AF15-437D-91BF-E930D5FF533D">
+        <componentClassName>iAd.MapView</componentClassName>
+        <outlet>mapView</outlet>
+        <outletNameFromTemplate>mapView</outletNameFromTemplate>
+        <templateName>Map View</templateName>
+        <properties>
+            <property name="-iap-original-size">{296, 355}</property>
+            <property name="ad-has-hidpi-version">true</property>
+            <property name="ad-map-type">satellite</property>
+            <property name="ad-outlet">mapView</property>
+            <property name="ad-pin-image">
+                <assetreference>19A3DA66-0605-4100-A3A9-D6C3EA787C3F</assetreference>
+            </property>
+            <property name="ad-pin-left-callout-visible">true</property>
+            <property name="ad-pin-offset-x">0</property>
+            <property name="ad-pin-offset-y">0</property>
+            <property name="ad-pin-right-callout-visible">true</property>
+            <property name="ad-search-radius">27mi</property>
+            <property name="ad-shows-user-location">true</property>
+            <property name="ad-site-id">demo</property>
+            <property name="background">transparent</property>
+            <property name="background-position">left top</property>
+            <property name="background-repeat">no-repeat</property>
+            <property name="background-repeat-x">no-repeat</property>
+            <property name="background-repeat-y">no-repeat</property>
+            <property name="background-size">auto auto</property>
+            <property name="height">582px</property>
+            <property name="left">48px</property>
+            <property name="top">80px</property>
+            <property name="width">928px</property>
+        </properties>
+        <userScriptFilename>F535E51A-3483-4A5A-93E8-A05FBD6987F9$mapViewDelegate.js</userScriptFilename>
+        <actionSequencesByEvent>
+            <dictionary>
+                <key name="mapViewDidReceiveDataFailure">
+                    <actionSequenceReference>2BE95B1B-5A72-4CE3-902F-19A8006ACF13</actionSequenceReference>
+                </key>
+                <key name="mapViewDidReceiveResponseData">
+                    <actionSequenceReference>86F3BE32-CD33-4282-9BC8-92C7AE835635</actionSequenceReference>
+                </key>
+            </dictionary>
+        </actionSequencesByEvent>
+    </component>
+    <component internalID="C595C359-D8C9-451A-8CEF-B7FA3E1BBCB0">
+        <componentClassName>iAP.SharedView</componentClassName>
+        <outlet>menuSharedLayer</outlet>
+        <outletNameFromTemplate>sharedView</outletNameFromTemplate>
+        <templateName>Shared Layer</templateName>
+        <properties>
+            <property name="-iap-original-size">{0, 0}</property>
+            <property name="-iap-shared-layer-position">
+                <integer>1</integer>
+            </property>
+            <property name="ad-clips-to-bounds">false</property>
+            <property name="ad-outlet">menuSharedLayer</property>
+            <property name="ad-repositions-subviews">
+                <true/>
+            </property>
+            <property name="ad-view-controller-id">
+                <reference representedObjectID="D6F5109F-83DA-4F1C-9433-B3EF6538CC96" representedObjectClassName="STPage"/>
+            </property>
+            <property name="height">
+                <real>69.0</real>
+            </property>
+            <property name="left">
+                <real>0.0</real>
+            </property>
+            <property name="top">
+                <real>699.0</real>
+            </property>
+            <property name="width">
+                <real>1024.0</real>
+            </property>
+        </properties>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="723E46DC-5B47-419C-982D-5B38B7BCF4D3">
+        <name>Page Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="B1B43692-7913-4E22-A305-77B94755E41E">
+        <name>Page Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="86F3BE32-CD33-4282-9BC8-92C7AE835635">
+        <name>javascript</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="39F44241-EE6B-4D8B-8EEB-3AAEC17BF227">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="573CDB5A-B577-4523-814C-F38F9A4F2515">
+                                        <actionTokenType>javascript</actionTokenType>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="2BE95B1B-5A72-4CE3-902F-19A8006ACF13">
+        <name>javascript</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>0</required>
+        <isWrapper>1</isWrapper>
+        <actionGroups>
+            <array>
+                <value>
+                    <actionGroup internalID="A622E8BB-6870-4891-873D-BD71C59D5819">
+                        <actions>
+                            <array>
+                                <value>
+                                    <action internalID="6BF272D9-F2EA-4F51-B186-8DBEFB0973E1">
+                                        <actionTokenType>javascript</actionTokenType>
+                                    </action>
+                                </value>
+                            </array>
+                        </actions>
+                        <delay>0.000000</delay>
+                    </actionGroup>
+                </value>
+            </array>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>723E46DC-5B47-419C-982D-5B38B7BCF4D3</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>B1B43692-7913-4E22-A305-77B94755E41E</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>7</listIndex>
+</page>

@@ -1,0 +1,4 @@
+#Loading { height: 768px; width: 1024px; }
+body.ad-LoDPI #Loading { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+body.ad-HiDPI #Loading { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+#Loading-loadingSpinner { height: 245px; left: 389px; top: 261px; width: 245px; }

@@ -1,0 +1,34 @@
+<page internalID="1908D541-5179-4F68-ADB0-FBBB28126D01">
+<name>root</name>
+<pageRole>1</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>1</orientation>
+<pageClassName>iAP.RootViewController</pageClassName>
+<properties>
+    <property name="-iap-temporary-content-state">3</property>
+    <property name="-iap-view-controller-class-name">iAP.RootViewController</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">cover</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>378196846.369</date>
+</lastModifiedDate>
+<listIndex>0</listIndex>
+</page>

@@ -1,0 +1,92 @@
+<page internalID="D4A81855-70AA-41F6-840B-24D680BD51E0">
+<name>Loading</name>
+<pageRole>8</pageRole>
+<pagePreviewIsDirty>0</pagePreviewIsDirty>
+<orientation>2</orientation>
+<pageClassName>iAP.LoadingViewController</pageClassName>
+<properties>
+    <property name="-iap-view-controller-class-name">iAP.LoadingViewController</property>
+    <property name="background-position">center</property>
+    <property name="background-repeat">no-repeat</property>
+    <property name="background-repeat-x">no-repeat</property>
+    <property name="background-repeat-y">no-repeat</property>
+    <property name="background-size">cover</property>
+    <property name="backgroundAudioShouldLoop">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="buildInActionListShouldOccurAfterTransition">
+        <true/>
+    </property>
+    <property name="buildOutActionListShouldDelayTransition">
+        <true/>
+    </property>
+    <property name="transition">Fade</property>
+    <property name="transitionDuration">0.5</property>
+</properties>
+<lastModifiedDate>
+    <date>361997089.115</date>
+</lastModifiedDate>
+<components>
+    <component internalID="ACE83B5A-8AF3-4E97-84BD-14D19C44738F">
+        <componentClassName>iAd.ActivityIndicatorView</componentClassName>
+        <outlet>loadingSpinner</outlet>
+        <outletNameFromTemplate>spinner</outletNameFromTemplate>
+        <templateName>Spinner</templateName>
+        <properties>
+            <property name="-iap-aspect-ratio-locked">true</property>
+            <property name="-iap-original-size">{74, 74}</property>
+            <property name="ad-activity-indicator-view-style">ad-white</property>
+            <property name="ad-animating">true</property>
+            <property name="ad-animation-style">ad-animation-stepped</property>
+            <property name="ad-auto-sized">false</property>
+            <property name="ad-has-hidpi-version">true</property>
+            <property name="ad-hides-when-stopped">false</property>
+            <property name="ad-outlet">loadingSpinner</property>
+            <property name="height">245</property>
+            <property name="left">
+                <real>389.0</real>
+            </property>
+            <property name="top">
+                <real>261.0</real>
+            </property>
+            <property name="width">245px</property>
+        </properties>
+    </component>
+</components>
+<actionSequences>
+    <actionSequence internalID="A20F5EC6-6DE1-4700-B3D0-3E9C4FFC55B1">
+        <name>Layer Appear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+    <actionSequence internalID="74A5EF58-058F-4F7F-8FAC-3C395CDB2749">
+        <name>Layer Disappear</name>
+        <iterationCount>1</iterationCount>
+        <animationDirectionShouldAlternate>0</animationDirectionShouldAlternate>
+        <required>1</required>
+        <isWrapper>0</isWrapper>
+        <actionGroups>
+            <array/>
+        </actionGroups>
+    </actionSequence>
+</actionSequences>
+<actionSequencesByEvent>
+    <dictionary>
+        <key name="viewControllerViewDidAppear">
+            <actionSequenceReference>A20F5EC6-6DE1-4700-B3D0-3E9C4FFC55B1</actionSequenceReference>
+        </key>
+        <key name="viewControllerViewWillDisappear">
+            <actionSequenceReference>74A5EF58-058F-4F7F-8FAC-3C395CDB2749</actionSequenceReference>
+        </key>
+    </dictionary>
+</actionSequencesByEvent>
+<listIndex>1</listIndex>
+</page>

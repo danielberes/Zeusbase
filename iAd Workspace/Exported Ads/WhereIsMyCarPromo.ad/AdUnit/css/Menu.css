@@ -1,0 +1,27 @@
+#Menu { height: 768px; width: 1024px; }
+body.ad-LoDPI #Menu { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+body.ad-HiDPI #Menu { background-position: center; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: cover; }
+#Menu-menuView { -webkit-border-radius: 0px; -webkit-box-shadow: none; -webkit-box-sizing: border-box; border-color: #838588; border-style: solid; border-width: 1px; height: 69px; left: 0px; top: 699px; width: 1024px; }
+body.ad-LoDPI #Menu-menuView { background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #666666)); background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+body.ad-HiDPI #Menu-menuView { background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #666666)); background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+#Menu-mapButton { -webkit-border-radius: 0px; -webkit-text-stroke-color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.4); border-style: none; color: #000000; font-family: HelveticaNeue; font-size: 30px; height: 68px; left: 631px; opacity: 1; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; padding-top: 0px; text-align: center; text-shadow: 0px 2px 4px #ffffff; top: 0px; visibility: visible; width: 240px; }
+body.ad-LoDPI #Menu-mapButton { background-color: none; background-image: none; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Menu-mapButton { background-color: none; background-image: none; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Menu-mapButton.ad-highlighted { color: #000000; }
+body.ad-LoDPI #Menu-mapButton.ad-highlighted { background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+body.ad-HiDPI #Menu-mapButton.ad-highlighted { background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+#Menu-mapButton.ad-disabled { opacity: 0.5; }
+#Menu-videosButton { -webkit-border-radius: 0px; -webkit-text-stroke-color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.4); border-style: none; color: #000000; font-family: HelveticaNeue; font-size: 30px; height: 68px; left: 391px; opacity: 1; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; padding-top: 0px; text-align: center; text-shadow: 0px 2px 4px #ffffff; top: 0px; visibility: visible; width: 240px; }
+body.ad-LoDPI #Menu-videosButton { background-color: none; background-image: none; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Menu-videosButton { background-color: none; background-image: none; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Menu-videosButton.ad-highlighted { color: #000000; }
+body.ad-LoDPI #Menu-videosButton.ad-highlighted { background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+body.ad-HiDPI #Menu-videosButton.ad-highlighted { background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+#Menu-videosButton.ad-disabled { opacity: 0.5; }
+#Menu-photosButton { -webkit-border-radius: 0px; border-color: rgba(0, 0, 0, 0.4); border-style: none; color: #000000; font-family: HelveticaNeue; font-size: 30px; height: 68px; left: 151px; opacity: 1; padding-bottom: 0px; padding-left: 5px; padding-right: 5px; padding-top: 0px; text-align: center; text-shadow: 0px 2px 4px #ffffff; top: 0px; visibility: visible; width: 240px; }
+body.ad-LoDPI #Menu-photosButton { background-color: none; background-image: none; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+body.ad-HiDPI #Menu-photosButton { background-color: none; background-image: none; background-repeat: no-repeat; background-repeat-x: no-repeat; background-repeat-y: no-repeat; }
+#Menu-photosButton.ad-highlighted { color: #000000; }
+body.ad-LoDPI #Menu-photosButton.ad-highlighted { background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+body.ad-HiDPI #Menu-photosButton.ad-highlighted { background-repeat-x: no-repeat; background-repeat-y: no-repeat; background-size: 100% 100%; }
+#Menu-photosButton.ad-disabled { opacity: 0.5; }
